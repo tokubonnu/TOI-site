@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TOI — 問いのタロット</title>
+<meta name="description" content="静けさの中で、本当の問いが見えてくる。今日の一枚から6枚のディープインサイトまで、映画のような引き心地のタロット。無料・登録不要。">
+<meta property="og:title" content="TOI — 問いのタロット">
+<meta property="og:description" content="静けさの中で、本当の問いが見えてくる。映画のような引き心地のタロット。">
+<meta property="og:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<meta property="og:url" content="https://toi.bibon.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TOI — 問いのタロット">
+<meta name="twitter:description" content="静けさの中で、本当の問いが見えてくる。映画のような引き心地のタロット。">
+<meta name="twitter:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<link rel="canonical" href="https://toi.bibon.net/">
+<meta name="theme-color" content="#08070f">
+<meta name="toi-ver" content="1784300777"><!-- デプロイ時にスタンプへ自動置換（deploy_site.sh） -->
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1784300777">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ===== ホーム ===== -->
+<main id="home" class="screen show">
+  <header class="top-bar">
+    <a href="/" class="logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="top-logo"></a>
+    <a href="/about.html" class="top-about">ABOUT</a>
+  </header>
+
+  <section class="hero">
+    <img src="/assets/img/reader_wide.webp" alt="" class="hero-img">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-fire" aria-hidden="true">
+      <span class="flame-glow"></span>
+      <span class="flame-core"></span>
+    </div>
+  </section>
+
+  <div class="hero-overlay">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1 class="hero-title">今日の一枚</h1>
+        <img src="/assets/img/divider.webp" alt="" class="hero-divider" aria-hidden="true">
+        <p class="hero-sub">日が変わるまで、あなたの一枚</p>
+        <button class="gold-btn hero-cta" data-spread="today">カードを引く　›</button>
+      </div>
+      <div class="hero-right">
+        <p class="hero-copy">静けさの中で、<br>本当の問いが見えてくる。</p>
+        <img src="/assets/img/divider.webp" alt="" class="hero-divider" aria-hidden="true">
+        <p class="hero-body">タロットは、未来を決めつけるものではなく、<br>今のあなたに必要な気づきを映し出す鏡。<br>その一枚が、次の一歩を照らします。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-below">
+  <nav class="menu" aria-label="スプレッドを選ぶ">
+    <button class="menu-item featured" data-spread="today">
+      <span class="menu-art menu-art-one" aria-hidden="true">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+      </span>
+      <span class="menu-txt">
+        <span class="menu-en">TODAY</span>
+        <span class="menu-ja">今日の一枚</span>
+        <span class="menu-note">日が変わるまで、あなたの一枚</span>
+        <span class="menu-count">1枚引き</span>
+      </span>
+    </button>
+    <button class="menu-item" data-spread="yesno">
+      <span class="menu-art menu-art-one" aria-hidden="true">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+      </span>
+      <span class="menu-txt">
+        <span class="menu-en">YES / NO</span>
+        <span class="menu-ja">その迷いに、<br class="tablet-only-break">ひとつの返事を</span>
+        <span class="menu-count">1枚引き</span>
+      </span>
+    </button>
+    <button class="menu-item" data-spread="choice">
+      <span class="menu-art menu-art-two" aria-hidden="true">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+      </span>
+      <span class="menu-txt">
+        <span class="menu-en">TWO PATHS</span>
+        <span class="menu-ja">ふたつの道</span>
+        <span class="menu-note">選んだ先を、ふたつ見比べる</span>
+        <span class="menu-count">2枚引き</span>
+      </span>
+    </button>
+    <button class="menu-item" data-spread="ppf">
+      <span class="menu-art menu-art-three" aria-hidden="true">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+      </span>
+      <span class="menu-txt">
+        <span class="menu-en">PAST · PRESENT · FUTURE</span>
+        <span class="menu-ja">過去・現在・未来</span>
+        <span class="menu-note">3枚で、いまの物語を読む</span>
+        <span class="menu-count">3枚引き</span>
+      </span>
+    </button>
+    <button class="menu-item" data-spread="hex">
+      <span class="menu-art menu-art-six" aria-hidden="true">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+        <img src="/assets/img/card_back.webp" alt="" class="menu-thumb">
+      </span>
+      <span class="menu-txt">
+        <span class="menu-en">DEEP INSIGHT</span>
+        <span class="menu-ja">深く読み解く</span>
+        <span class="menu-note">6枚で、状況をぐるりと見渡す</span>
+        <span class="menu-count">6枚引き</span>
+      </span>
+    </button>
+  </nav>
+
+  <footer class="home-foot">
+    <div class="feat-row">
+      <span class="feat"><span class="feat-mark" aria-hidden="true">◇</span><span><b>完全プライベート</b>あなたの情報は保存されません</span></span>
+      <span class="feat"><span class="feat-mark" aria-hidden="true">♢</span><span><b>百年前の原画</b>1909年に描かれた原典の絵柄</span></span>
+      <span class="feat"><span class="feat-mark" aria-hidden="true">▣</span><span><b>登録不要・すぐに占えます</b>いつでも、どこでも</span></span>
+    </div>
+    <a href="/about.html" class="foot-link">このタロットについて</a>
+  </footer>
+  </div>
+</main>
+
+<!-- ===== ステージ ===== -->
+<section id="stage" class="screen" aria-live="polite">
+  <a href="/" class="stage-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="stage-logo"></a>
+  <img src="/assets/img/reader_wide.webp" alt="" class="stage-bg" aria-hidden="true">
+  <div class="reader-wrap" aria-hidden="true">
+    <img src="/assets/img/reader.webp" alt="" class="reader">
+  </div>
+
+  <p id="guide" class="guide"></p>
+
+  <div id="slots" class="slots"></div>
+  <div id="table" class="table-area"></div>
+
+  <button id="stopBtn" class="gold-btn hidden">とめる</button>
+  <button id="skipBtn" class="skip-btn hidden">▸▸ すぐ結果へ</button>
+  <button id="homeBtn" class="home-btn" aria-label="メニューへ戻る">✕</button>
+
+  <div id="reading" class="reading">
+    <div class="reading-inner">
+      <div class="result-top">
+        <div class="result-heading" aria-hidden="true">
+          <span class="result-kicker"></span>
+          <span class="result-name"></span>
+          <img src="/assets/img/divider.webp" alt="" class="result-rule" aria-hidden="true">
+          <span class="result-description"></span>
+        </div>
+        <div id="resultCards" class="result-cards" aria-hidden="true"></div>
+      </div>
+      <h2 id="readingTitle" class="reading-title"></h2>
+      <div class="reading-flow">
+      <div id="readingBody" class="reading-body"></div>
+
+      <div class="share-row" id="shareRow">
+        <span class="share-label">結果をシェア</span>
+        <button class="share-btn" data-share="x">X</button>
+        <button class="share-btn" data-share="threads">Threads</button>
+        <button class="share-btn" data-share="line">LINE</button>
+        <button class="share-btn" data-share="copy">コピー</button>
+      </div>
+
+      <!-- アフィリエイト枠（フェーズ1で解放）
+      <div class="deep-dive">
+        <p class="deep-label">もっと深く見てもらいたい人へ（PR）</p>
+        <a class="deep-link" href="#" rel="sponsored noopener">…</a>
+      </div>
+      -->
+
+      <div class="again-row">
+        <button id="againBtn" class="gold-btn small">もういちど引く</button>
+        <button id="menuBtn" class="ghost-btn small">ほかの引き方</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button id="topBtn" class="top-btn" aria-label="ページの上へ">▲</button>
+
+<script src="/assets/js/fx.js?v=1784300777"></script>
+<script src="/assets/js/app.js?v=1784300777"></script>
+</body>
+</html>
