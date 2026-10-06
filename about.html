@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/about.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このタロットについて — TOI</title>
+<meta name="description" content="TOIについて。逆位置を使わない理由、文章のこと、カードの絵柄、免責について。">
+<meta property="og:title" content="このタロットについて — TOI">
+<meta property="og:description" content="TOIについて。逆位置を使わない理由、文章のこと、カードの絵柄、免責について。">
+<meta property="og:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<meta property="og:url" content="https://toi.bibon.net/about.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="このタロットについて — TOI">
+<meta name="twitter:description" content="TOIについて。逆位置を使わない理由、文章のこと、カードの絵柄、免責について。">
+<meta name="twitter:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<link rel="canonical" href="https://toi.bibon.net/about.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<style>
+  .about-wrap {
+    position: relative; z-index: 10;
+    max-width: 640px; margin: 0 auto;
+    padding: 26px 16px 80px;
+  }
+  /* 見出しはカード辞典・相談ページ（card.css の cp-h1/cp-h2/cp-p）と同じ段にそろえる（2026-10-06）：左揃え・h1 23px > h2 18px > 本文 15px（スマホ 15.5px） */
+  .about-wrap h1 { color: var(--gold); font-size: 23px; line-height: 1.45; letter-spacing: 0.1em; font-weight: normal; text-align: left; text-wrap: balance; word-break: auto-phrase; margin-bottom: 8px; }
+  .about-wrap h2 { color: var(--gold); font-size: 18px; line-height: 1.5; letter-spacing: 0.15em; font-weight: normal; text-align: left; text-wrap: balance; word-break: auto-phrase; margin: 46px 0 16px; border-bottom: 1px solid rgba(184,154,74,0.4); padding-bottom: 8px; }
+  .about-wrap p { color: var(--dim); font-size: 15px; line-height: 2.05; margin-bottom: 14px; }
+  @media (max-width: 600px) { .about-wrap p { font-size: 15.5px; line-height: 2.0; } }
+  .about-wrap .back { display: inline-block; margin-top: 36px; color: var(--gold); border: 1px solid var(--gold-soft); padding: 12px 26px; text-decoration: none; letter-spacing: 0.25em; font-size: 13px; }
+  .about-wrap .back:hover { background: rgba(212,181,103,0.1); }
+  .about-wrap p a { color: var(--gold); text-decoration: underline; text-underline-offset: 4px; }
+</style>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<!-- 上のメニュー・下の案内はカード辞典・相談ページ（scripts/build_card_pages.py の head()・FOOT）と同じ物（2026-10-06）。あちらを変えたらここも -->
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html" aria-current="page">このタロットについて</a></nav>
+</header>
+<main class="about-wrap">
+  <h1>このタロットについて</h1>
+
+  <h2>TOIについて</h2>
+  <p>TOIは、静けさの中で自分の気持ちと向き合うためのタロットです。カードの言葉が当たっていたら、それはそれで楽しんでください。ただ、その言葉をどう受け取って、どう使うかを決めるのは、いつもあなた。カードは、いまのあなたに必要な気づきを映す鏡だと考えています。</p>
+
+  <h2>逆位置を使いません</h2>
+  <p>タロットには、カードが逆さまに出た時に意味を反転させる「逆位置」という読み方があります。TOIはこれを使いません。1枚の絵の中に、光の面もかげの面も、最初から両方入っているからです。</p>
+
+  <h2>文章について</h2>
+  <p>78枚それぞれの解説文・決め文・短詩、そして複数枚（2枚・3枚・6枚）の組み合わせを読む総括文まで、このサイトのすべての文章は、このサイトのために書き下ろされた固定の文章です。その場でAIが自動生成しているものではありません。何度引いても文章の品質が揺れないのは、そのためです。</p>
+  <p>78枚それぞれの解説は <a href="/cards/">カードの意味一覧</a> から。</p>
+
+  <h2>カードの絵柄について</h2>
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開されたタロットカード原典のスキャンを使用しています。原典は著作権保護期間が満了したパブリックドメインの作品です。</p>
+
+  <h2>免責</h2>
+  <p>このサイトのリーディングは娯楽・内省の補助を目的としたもので、医療・法律・お金に関する助言ではありません。重要な判断は、その分野の専門家にご相談ください。</p>
+  <p>今日の一枚は日付とお使いのブラウザをもとに決まり、日が変わるまで同じカードが出ます。個人を特定する情報は収集していません。</p>
+  <p>2枚・3枚・6枚の結果の下と <a href="/compare/">相談先の選び方</a> には、広告（アフィリエイト）を含みます。［PR］の表示がある所です。今日の一枚・YES/NO には広告を置いていません。</p>
+  <p>アクセス解析のため、Google アナリティクスを使っています。Cookie を使って、どのページがどのくらい読まれているかといった利用状況を、個人を特定しない形で集めています。データの扱いについては <a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のポリシー</a> をご覧ください。</p>
+
+  <a class="back" href="/">← カードを引きにもどる</a>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

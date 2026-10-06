@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/08_strength.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>力（STRENGTH）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「感情は、抑えるより扱えるようになる方が強い。」力（STRENGTH）が伝えるのは声を荒げない芯の強さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="力（STRENGTH）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「感情は、抑えるより扱えるようになる方が強い。」力（STRENGTH）が伝えるのは声を荒げない芯の強さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/08_strength.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/08_strength.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="力（STRENGTH）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「感情は、抑えるより扱えるようになる方が強い。」力（STRENGTH）が伝えるのは声を荒げない芯の強さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/08_strength.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/08_strength.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"大アルカナ","item":"https://toi.bibon.net/cards/major/"},{"@type":"ListItem","position":4,"name":"力（STRENGTH）","item":"https://toi.bibon.net/cards/08_strength.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"力（STRENGTH）の意味","description":"「感情は、抑えるより扱えるようになる方が強い。」力（STRENGTH）が伝えるのは声を荒げない芯の強さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/08_strength.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/08_strength.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/major/">大アルカナ</a><span>›</span><span aria-current="page">力</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">力<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">STRENGTH</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/08_strength.webp" alt="力" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">強さは、<wbr>押さえ<wbr>込むことより、<wbr>扱えることに<wbr>表れます。</p>
+        <p class="cp-one">「感情は、<wbr>抑えるより<wbr>扱えるようになる<wbr>方が<wbr>強い。」</p>
+        <a class="cp-btn" href="/?c=08_strength">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">力は、強い感情や衝動を、自分の中で扱っていくカードです。怖さ、怒り、焦り、欲求。どれも無くせばいいものではなく、向ける先を選べば、自分を動かす力になります。</p><p class="cp-p">本当に強い時ほど、必要以上に大きな声を出さなくても済みます。力で押すより、落ち着いて相手を見る。感情に任せて動くより、その感情が何を伝えているのかを見る。静かな方に、長く続く強さがあることもあります。</p><p class="cp-p">一方で、耐えることばかりを選んでいると、自分の中にたまったものが別の形であふれます。逆に、抑えきれずそのまま外へぶつければ、力はあっても扱いきれていない状態になります。大切なのは、消すことでも放つことでもなく、どう使うかです。</p><p class="cp-p">自分の中にある強いものを怖がらず、その性質を知ること。力は、何も感じなくなることではありません。揺れながらも、自分で戻る場所を持っていること。その積み重ねが、簡単には崩れない強さになります。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、強い気持ちを抱えながらも、それに振り回されず進んできた場面があります。その経験が、今の落ち着きや粘り強さにつながっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、気持ちを消すより、その正体を見て扱う時です。何に反応しているのかがわかると、その力を向ける先も見えてきます。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、自分の感情や衝動との付き合い方が変わっていきます。以前なら振り回されていたものも、少しずつ自分の力として使えるようになります。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、思っている以上に強い感情があります。その力を怖がる気持ちと、うまく使いたい気持ちが同時にあります。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、強く出る人もいれば、静かに支える人もいます。今は、声の大きさより、どんな力の使い方をしているかを見ることで違いが見えてきます。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">この先は、自分の中の強さを無理なく使えるようになります。押し切るより、落ち着いて扱えることが、長く続く力になっていきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-lean_yes">YES 寄り</span></p>
+    <p class="cp-p">進む力はあります。感情に飲まれず、その力を使える形へ。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">怒りや<wbr>怖さを<wbr>無理に<wbr>押さえ<wbr>込むと、</span><span class="cp-poem-l">かえって<wbr>自分の<wbr>中で<wbr>暴れ始めることがあります。</span><span class="cp-poem-l">その力が<wbr>何を<wbr>守ろうとしているのか<wbr>分かれば、</span><span class="cp-poem-l">荒々しさの<wbr>中にも、<wbr>扱える<wbr>強さが<wbr>残ります。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=08_strength">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/07_chariot.html"><img src="/assets/img/cards/07_chariot.webp" alt="戦車" loading="lazy" width="520" height="893"><span class="cp-mini-ja">戦車</span><span class="cp-mini-en">THE CHARIOT</span><span class="cp-mini-kime">力を増やすより、向ける先を決めた方が進める時があります。</span></a><a class="cp-mini" href="/cards/09_hermit.html"><img src="/assets/img/cards/09_hermit.webp" alt="隠者" loading="lazy" width="520" height="893"><span class="cp-mini-ja">隠者</span><span class="cp-mini-en">THE HERMIT</span><span class="cp-mini-kime">遠くの答えより、今見えている一歩が道をつくります。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/03_empress.html"><img src="/assets/img/cards/03_empress.webp" alt="女帝" loading="lazy" width="520" height="893"><span class="cp-mini-ja">女帝</span><span class="cp-mini-en">THE EMPRESS</span><span class="cp-mini-kime">育っている途中には、まだ実りの形が見えないこともある。</span></a><a class="cp-mini" href="/cards/14_temperance.html"><img src="/assets/img/cards/14_temperance.webp" alt="節制" loading="lazy" width="520" height="893"><span class="cp-mini-ja">節制</span><span class="cp-mini-en">TEMPERANCE</span><span class="cp-mini-kime">ちょうどよさは、最初から決まっているものではありません。</span></a><a class="cp-mini" href="/cards/17_star.html"><img src="/assets/img/cards/17_star.webp" alt="星" loading="lazy" width="520" height="893"><span class="cp-mini-ja">星</span><span class="cp-mini-en">THE STAR</span><span class="cp-mini-kime">希望は、叶った時より、まだ途中にいる時に道を照らします。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/24_three_of_wands.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワンドの3（THREE OF WANDS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「進んだからこそ、前にはなかった景色が見えてきます。」ワンドの3（THREE OF WANDS）が伝えるのはもう動き出している結果。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="ワンドの3（THREE OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「進んだからこそ、前にはなかった景色が見えてきます。」ワンドの3（THREE OF WANDS）が伝えるのはもう動き出している結果。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/24_three_of_wands.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/24_three_of_wands.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ワンドの3（THREE OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「進んだからこそ、前にはなかった景色が見えてきます。」ワンドの3（THREE OF WANDS）が伝えるのはもう動き出している結果。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/24_three_of_wands.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/24_three_of_wands.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"ワンド","item":"https://toi.bibon.net/cards/wands/"},{"@type":"ListItem","position":4,"name":"ワンドの3（THREE OF WANDS）","item":"https://toi.bibon.net/cards/24_three_of_wands.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ワンドの3（THREE OF WANDS）の意味","description":"「進んだからこそ、前にはなかった景色が見えてきます。」ワンドの3（THREE OF WANDS）が伝えるのはもう動き出している結果。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/24_three_of_wands.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/24_three_of_wands.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/wands/">ワンド</a><span>›</span><span aria-current="page">ワンドの3</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">ワンドの<wbr>3<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">THREE OF WANDS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/24_three_of_wands.webp" alt="ワンドの3" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">動き始めたものは、<wbr>思っていたより<wbr>遠くまで<wbr>広がっていきます。</p>
+        <p class="cp-one">「進んだからこそ、<wbr>前にはなかった<wbr>景色が<wbr>見えてきます。」</p>
+        <a class="cp-btn" href="/?c=24_three_of_wands">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">ワンドの3は、始めたことが自分の手元を離れ、少しずつ外へ広がっていくカードです。考えていたことを実際に動かしたからこそ、最初には見えなかった可能性や、その先にある景色が見え始めます。</p><p class="cp-p">目の前のことだけに追われていると、どこまで来たのかは意外とわかりにくいものです。一度遠くを見渡すと、進んだ距離も、この先にある機会も見えてきます。今までの準備や行動が、次の展開につながるところまで来ています。</p><p class="cp-p">ただ、先が見えるほど、予定どおりに進むことを期待しすぎることがあります。自分の手を離れたものには、相手の事情や外の流れも加わります。待つ時間や思わぬ遅れも含めて、少し広い目で流れを見ることが必要です。</p><p class="cp-p">今までしてきたことを土台に、次はどこまで広げたいのか。その視線を遠くへ向けることで、目の前の一歩にも意味が生まれます。ワンドの3は、始まりの勢いが、その先の展望へ変わっていく時を表しています。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、考えるだけだったものを実際に動かし、少しずつ形にしてきた流れがあります。その積み重ねが、今見えている可能性につながっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、目の前だけでなく、その先まで視野を広げたい時です。ここまで進めたものが、どこへつながっているのかを見ることで次の動きが見えてきます。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、今まで届かなかった場所へ流れが広がっていきます。新しい人や環境とのつながりが、さらに先へ進むきっかけになります。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、今いる場所より少し遠くまで行ってみたい気持ちがあります。ここまで来たからこそ、次の景色が気になり始めています。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、これまでの動きをさらに広げる機会があります。まだ遠くに見えるものも、すでに今の流れとつながり始めています。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">続けてきたことが外へ広がり、選べる道も増えていきます。自分の手元だけでは生まれなかった展開が入り始めます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-yes">YES</span></p>
+    <p class="cp-p">流れは先へ続いています。少し遠くまで見渡して。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">動かし<wbr>始めたものが<wbr>手元を<wbr>離れると、</span><span class="cp-poem-l">外から<wbr>新しい<wbr>反応や<wbr>機会が<wbr>返ってきます。</span><span class="cp-poem-l">自分だけでは<wbr>届かなかった<wbr>場所へ<wbr>広がるほど、</span><span class="cp-poem-l">次に<wbr>伸ばす<wbr>手も、<wbr>自然と<wbr>遠くなります。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=24_three_of_wands">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/23_two_of_wands.html"><img src="/assets/img/cards/23_two_of_wands.webp" alt="ワンドの2" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>2</span><span class="cp-mini-en">TWO OF WANDS</span><span class="cp-mini-kime">遠くを見た時、今いる場所で何を選ぶかも見えてきます。</span></a><a class="cp-mini" href="/cards/25_four_of_wands.html"><img src="/assets/img/cards/25_four_of_wands.webp" alt="ワンドの4" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>4</span><span class="cp-mini-en">FOUR OF WANDS</span><span class="cp-mini-kime">途中で喜べることも、長く歩き続けるための力になります。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/25_four_of_wands.html"><img src="/assets/img/cards/25_four_of_wands.webp" alt="ワンドの4" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>4</span><span class="cp-mini-en">FOUR OF WANDS</span><span class="cp-mini-kime">途中で喜べることも、長く歩き続けるための力になります。</span></a><a class="cp-mini" href="/cards/21_world.html"><img src="/assets/img/cards/21_world.webp" alt="世界" loading="lazy" width="520" height="893"><span class="cp-mini-ja">世界</span><span class="cp-mini-en">THE WORLD</span><span class="cp-mini-kime">ここまでの歩みが、次へ進むためのひとつの輪になります。</span></a><a class="cp-mini" href="/cards/17_star.html"><img src="/assets/img/cards/17_star.webp" alt="星" loading="lazy" width="520" height="893"><span class="cp-mini-ja">星</span><span class="cp-mini-en">THE STAR</span><span class="cp-mini-kime">希望は、叶った時より、まだ途中にいる時に道を照らします。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

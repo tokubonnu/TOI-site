@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/10_wheel_of_fortune.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>運命の輪（WHEEL OF FORTUNE）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「流れが変わる時、今まで見えなかった道が現れます。」運命の輪（WHEEL OF FORTUNE）が伝えるのは回り始めた流れに乗る身軽さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="運命の輪（WHEEL OF FORTUNE）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「流れが変わる時、今まで見えなかった道が現れます。」運命の輪（WHEEL OF FORTUNE）が伝えるのは回り始めた流れに乗る身軽さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/10_wheel_of_fortune.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/10_wheel_of_fortune.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="運命の輪（WHEEL OF FORTUNE）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「流れが変わる時、今まで見えなかった道が現れます。」運命の輪（WHEEL OF FORTUNE）が伝えるのは回り始めた流れに乗る身軽さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/10_wheel_of_fortune.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/10_wheel_of_fortune.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"大アルカナ","item":"https://toi.bibon.net/cards/major/"},{"@type":"ListItem","position":4,"name":"運命の輪（WHEEL OF FORTUNE）","item":"https://toi.bibon.net/cards/10_wheel_of_fortune.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"運命の輪（WHEEL OF FORTUNE）の意味","description":"「流れが変わる時、今まで見えなかった道が現れます。」運命の輪（WHEEL OF FORTUNE）が伝えるのは回り始めた流れに乗る身軽さ。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/10_wheel_of_fortune.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/10_wheel_of_fortune.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/major/">大アルカナ</a><span>›</span><span aria-current="page">運命の輪</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">運命の<wbr>輪<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">WHEEL OF FORTUNE</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/10_wheel_of_fortune.webp" alt="運命の輪" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">止まって<wbr>見えた<wbr>流れも、<wbr>見えないところでは<wbr>動いています。</p>
+        <p class="cp-one">「流れが<wbr>変わる<wbr>時、<wbr>今まで<wbr>見えなかった<wbr>道が<wbr>現れます。」</p>
+        <a class="cp-btn" href="/?c=10_wheel_of_fortune">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">運命の輪は、流れが切り替わる時に現れるカードです。自分で計画して動かしたことだけではなく、偶然の出会いや予定外の出来事が、思いがけない方向へ話を進めることがあります。</p><p class="cp-p">物事には、動く時と止まる時があります。ずっと続くように見えた状況でも、少しずつ条件は変わっています。今まで届かなかったものが届いたり、逆に当たり前だったものが離れたり。そうした変化の中で、次の流れが生まれます。</p><p class="cp-p">一方で、変わることを嫌って同じ場所に戻ろうとすると、かえって苦しくなることがあります。慣れた形には安心がありますが、もう合わなくなったものまで抱え続ければ、同じことを繰り返しやすくなります。</p><p class="cp-p">運命の輪が示すのは、すべてを成り行きに任せることではありません。変えられない流れがある時に、その中で自分がどう動くかを見ることです。巡ってきた変化をきっかけに、止まっていたものが動き始めることもあります。</p>
+
+    <h2 class="cp-h2">恋愛・仕事・相手の<wbr>気持ちで<wbr>読む</h2>
+    <h3 class="cp-h3">恋愛で<wbr>出たとき</h3><p class="cp-p">関係の空気が切り替わる時、運命の輪は、自分だけでは決められない流れの変化を映します。出会いや再接近だけでなく、予定や環境の変化で距離が動くことも含まれます。変化そのものを吉凶に決めず、今までと何が変わったのかを見ておきたい場面です。</p>
+    <h3 class="cp-h3">仕事で<wbr>出たとき</h3><p class="cp-p">仕事の流れが急に変わった時、運命の輪は、予定していなかった機会や配置の変化など、自分の外側から来る動きを映します。流れに乗ることだけが正解ではありません。今の変化で増えた選択肢と、変わらず守りたい条件を分けて見ると、次の動きが整理しやすくなります。</p>
+    <h3 class="cp-h3">相手の<wbr>気持ちとして<wbr>出たとき</h3><p class="cp-p">相手側に運命の輪が出た時は、関係への見方や距離感が切り替わり始めている様子が映ります。気持ちが大きくなったとも離れたとも、この一枚だけでは決められません。以前と比べて、言葉や態度のどこが変わったのかを見ることが、今の流れを読む手がかりになります。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、自分の予定とは違う流れに乗ったことで、状況が大きく変わった場面があります。その変化が、今につながるきっかけになっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、流れそのものが切り替わりつつあります。無理に元へ戻そうとするより、何が変わり始めているのかを見ることで次の動きが見えてきます。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、思っていた形とは違う展開が入りやすくなります。その変化をどう受け取るかで、同じ流れの中でも進む方向は変わっていきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、このまま同じではいたくない気持ちがあります。変わることへの不安と、新しい流れを待つ気持ちが一緒にあります。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりでも、状況や人の動きが少しずつ変わっています。自分だけでは決められないことが、次のきっかけになることもあります。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">この先は、今まで止まっていたものが動き出します。流れに変化が入ることで、新しい選択肢も見えやすくなっていきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-yes">YES</span></p>
+    <p class="cp-p">流れは動いています。変化の中で見える機会を逃さないで。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">同じ場所を<wbr>回っているように<wbr>見えても、</span><span class="cp-poem-l">流れは<wbr>少しずつ<wbr>位置を<wbr>変えています。</span><span class="cp-poem-l">思いがけない<wbr>出来事が<wbr>輪を<wbr>押した<wbr>時、</span><span class="cp-poem-l">止まっていた<wbr>景色まで<wbr>動き始めます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=10_wheel_of_fortune">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/09_hermit.html"><img src="/assets/img/cards/09_hermit.webp" alt="隠者" loading="lazy" width="520" height="893"><span class="cp-mini-ja">隠者</span><span class="cp-mini-en">THE HERMIT</span><span class="cp-mini-kime">遠くの答えより、今見えている一歩が道をつくります。</span></a><a class="cp-mini" href="/cards/11_justice.html"><img src="/assets/img/cards/11_justice.webp" alt="正義" loading="lazy" width="520" height="893"><span class="cp-mini-ja">正義</span><span class="cp-mini-en">JUSTICE</span><span class="cp-mini-kime">選んだ理由まで引き受けられる時、判断に迷いが減ります。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/07_chariot.html"><img src="/assets/img/cards/07_chariot.webp" alt="戦車" loading="lazy" width="520" height="893"><span class="cp-mini-ja">戦車</span><span class="cp-mini-en">THE CHARIOT</span><span class="cp-mini-kime">力を増やすより、向ける先を決めた方が進める時があります。</span></a><a class="cp-mini" href="/cards/06_lovers.html"><img src="/assets/img/cards/06_lovers.webp" alt="恋人" loading="lazy" width="520" height="893"><span class="cp-mini-ja">恋人</span><span class="cp-mini-en">THE LOVERS</span><span class="cp-mini-kime">惹かれる理由をたどると、自分が大切にしているものが見えてくる。</span></a><a class="cp-mini" href="/cards/01_magician.html"><img src="/assets/img/cards/01_magician.webp" alt="魔術師" loading="lazy" width="520" height="893"><span class="cp-mini-ja">魔術師</span><span class="cp-mini-en">THE MAGICIAN</span><span class="cp-mini-kime">持っている力は、使うことで初めて答えになります。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

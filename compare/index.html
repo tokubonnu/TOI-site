@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/compare/", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>電話占いの選び方｜登録料・料金・初回特典の条件 ｜ TOI 問いのタロット</title>
+<meta name="description" content="電話占いを選ぶ前に知っておきたい、登録料・鑑定料金・初回特典の条件・相談方法。TOI が提携している2社を、順位を付けずに公式サイトの情報で並べました（広告を含みます）。">
+<meta property="og:title" content="電話占いの選び方｜登録料・料金・初回特典の条件 ｜ TOI 問いのタロット">
+<meta property="og:description" content="電話占いを選ぶ前に知っておきたい、登録料・鑑定料金・初回特典の条件・相談方法。TOI が提携している2社を、順位を付けずに公式サイトの情報で並べました（広告を含みます）。">
+<meta property="og:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/compare/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="電話占いの選び方｜登録料・料金・初回特典の条件 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="電話占いを選ぶ前に知っておきたい、登録料・鑑定料金・初回特典の条件・相談方法。TOI が提携している2社を、順位を付けずに公式サイトの情報で並べました（広告を含みます）。">
+<meta name="twitter:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<link rel="canonical" href="https://toi.bibon.net/compare/">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"相談先の選び方","item":"https://toi.bibon.net/compare/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"電話占いの選び方","description":"電話占いを選ぶ前に知っておきたい、登録料・鑑定料金・初回特典の条件・相談方法。TOI が提携している2社を、順位を付けずに公式サイトの情報で並べました（広告を含みます）。","image":"https://toi.bibon.net/assets/img/ogp_default.jpg","inLanguage":"ja","datePublished":"2026-10-06","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/compare/"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><span aria-current="page">相談先の選び方</span></nav>
+  <p class="cmp-pr-note"><span class="cmp-pr-badge">［PR］</span>このページには広告（アフィリエイト）が含まれます。下のリンクから登録があると、TOI に紹介料が入ります。掲載順は順位ではありません。</p>
+  <article class="cp-article">
+    <h1 class="cp-h1 cp-h1-hub">この結果を、<wbr>もう<wbr>少し詳しく<wbr>見たい<wbr>方へ</h1>
+    <p class="cp-p">TOIでは、あらかじめ用意されたカードの読みをもとに、結果をお届けしています。</p>
+    <p class="cp-p">電話占いでは、今の状況や聞きたいことを伝えながら、占い師に個別に見てもらうことができます。</p>
+    <p class="cp-p">ここでは、TOIが提携している電話占いを2社紹介します。</p>
+
+    <h2 class="cp-h2">先に<wbr>知っておきたいこと</h2>
+    <h3 class="cp-h3">「登録無料」と<wbr>「相談無料」は<wbr>別です</h3>
+    <p class="cp-p">どちらの会社も、会員登録は無料です。</p>
+    <p class="cp-p">ただし、占い師への鑑定・相談には料金がかかります。</p>
+    <p class="cp-p">電話は1分ごと、メールは1件ごとなど、料金の数え方は会社や相談方法によって違います。登録が無料でも、相談まで無料になるわけではありません。</p>
+    <h3 class="cp-h3">初回特典には<wbr>条件があります</h3>
+    <p class="cp-p">初回特典には、無料になる時間や金額の上限、対象になる占い師などの条件があります。</p>
+    <p class="cp-p">時間と金額の両方に上限がある場合は、どちらか先に達した時点で無料の範囲が終わります。そのまま相談を続けると、通常の料金がかかります。</p>
+    <h3 class="cp-h3">料金は<wbr>占い師ごとに<wbr>違います</h3>
+    <p class="cp-p">同じ会社でも、鑑定料金は占い師によって違います。</p>
+    <p class="cp-p">相談する前に、選んだ占い師の料金を確認しておくと、どのくらいかかるか目安を立てやすくなります。</p>
+    <p class="cp-p cp-p-dim">下の内容は、2026年10月6日に各社の公式サイトで確認したものです。料金や特典は変わることがあるため、最新の内容は公式サイトでご確認ください。こちらで読み取れなかった項目は「公式で確認」と記載しています。</p>
+
+    <h2 class="cp-h2">2社の<wbr>料金と<wbr>特典<span class="cmp-h2-date">（2026年10月6日時点）</span></h2>
+    <section class="cmp-co">
+      <h3 class="cmp-name">電話占い<wbr>ヴェルニ</h3>
+      <dl class="cmp-dl"><div class="cmp-row"><dt>登録料</dt><dd>無料（公式に「新規会員登録(登録無料)」と記載）</dd></div><div class="cmp-row"><dt>電話の鑑定料金</dt><dd>1分180円〜600円（税込）。占い師ごとに、20円きざみの22段階で決まっています。占い師とつながった時から1分単位で数えます。</dd></div><div class="cmp-row"><dt>メールの鑑定料金</dt><dd>1件ごと（1件につき相談は1つ）。金額は占い師ごとに違います＝公式で確認。上の1分あたりの料金は、メールには当てはまりません。</dd></div><div class="cmp-row"><dt>チャットの鑑定料金</dt><dd>金額と数え方は、公式の料金案内・占い師ごとのページでご確認ください。</dd></div><div class="cmp-row"><dt>初回特典</dt><dd>公式に「新規登録特典有」と記載があります。特典の内容と条件は、公式の新規登録特典のページでご確認ください。</dd></div><div class="cmp-row"><dt>相談方法</dt><dd>電話・チャット・メール</dd></div><div class="cmp-row"><dt>通話料</dt><dd>無料（フリーダイヤル。固定電話・携帯電話とも）</dd></div><div class="cmp-row"><dt>支払い方法</dt><dd>先にポイントを買う「先払い」と、使った分をあとで払う「後払い」の2通り。先払いは購入額に応じてサービスポイントが付きます。</dd></div><div class="cmp-row"><dt>受付</dt><dd>24時間（公式に「24時間いつでも」と記載）</dd></div></dl>
+      <p class="cmp-src">出典（2026年10月6日に確認）：vernis.co.jp の<a href="https://vernis.co.jp/" target="_blank" rel="nofollow noopener">トップ</a>・<a href="https://vernis.co.jp/pay_guide.php" target="_blank" rel="nofollow noopener">料金案内と支払い方法</a>・<a href="https://vernis.co.jp/firsttime.php" target="_blank" rel="nofollow noopener">初めての方</a>・<a href="https://vernis.co.jp/newprivilege.php" target="_blank" rel="nofollow noopener">新規登録特典</a>。料金・特典は変わることがあります。最新は公式の案内でご確認ください。</p>
+      <div class="cmp-go" data-slot="deep" data-pid="7674" data-name="電話占いヴェルニ"></div>
+    </section><section class="cmp-co">
+      <h3 class="cmp-name">電話占い<wbr>デスティニー</h3>
+      <dl class="cmp-dl"><div class="cmp-row"><dt>登録料</dt><dd>無料（入会金・月会費も無料と公式に記載）</dd></div><div class="cmp-row"><dt>鑑定料金の目安</dt><dd>電話は1分189円〜、チャットは1分159円〜（どちらも税込）。上限は占い師ごとに違います＝公式で確認。</dd></div><div class="cmp-row"><dt>初回特典（10分無料）</dt><dd><ul class="cmp-ul"><li>無料になるのは最大10分、かつ最大2,450円分までです。</li><li>10分と鑑定料金2,450円の、どちらか先に達した時点で無料は終わり、そこから1分ごとに料金がかかります。</li><li>1分の料金が高い占い師だと、10分より前に有料に切り替わります。切り替わりのお知らせはありません。</li><li>対象は初めて鑑定を頼む占い師だけで、月1回まで。</li><li>前払い・チャットで使う時に必要なポイントや、鑑定を続ける長さなどの条件は、利用方法や初回・翌月以降で違います。</li><li>使う前に、下の出典（鑑定料金案内・電話占い10分無料）の公式の案内で確かめてください。</li></ul></dd></div><div class="cmp-row"><dt>相談方法</dt><dd>電話・チャット</dd></div><div class="cmp-row"><dt>通話料</dt><dd>無料（携帯・固定・IP電話とも、会社が負担）</dd></div><div class="cmp-row"><dt>支払い方法</dt><dd>前払い（ポイント）・後払い・後払いクレジットから選べます。チャットは前払いだけです。</dd></div><div class="cmp-row"><dt>受付</dt><dd>24時間（公式に「24時間いつでも」と記載）</dd></div></dl>
+      <p class="cmp-src">出典（2026年10月6日に確認）：d-ny.jp の<a href="https://d-ny.jp/" target="_blank" rel="nofollow noopener">トップ</a>・<a href="https://d-ny.jp/ssl/Visitor.php" target="_blank" rel="nofollow noopener">鑑定料金案内</a>・<a href="https://d-ny.jp/ssl/Free10min2.php" target="_blank" rel="nofollow noopener">電話占い10分無料</a>・<a href="https://d-ny.jp/ssl/gp_shinki2.php" target="_blank" rel="nofollow noopener">入会特典</a>。料金・特典は変わることがあります。最新は公式の案内でご確認ください。</p>
+      <div class="cmp-go" data-slot="mid" data-pid="8084" data-name="電話占いデスティニー"></div>
+    </section>
+
+    <h2 class="cp-h2">選び方</h2>
+    <h3 class="cp-h3">話し方で<wbr>選ぶ</h3>
+    <p class="cp-p">声で話したいなら電話、文字でやり取りしたいならチャット、時間をかけて書いて送りたいならメール、という選び方があります。</p>
+    <p class="cp-p">2社のうち、メールで相談できるのはヴェルニです。</p>
+    <h3 class="cp-h3">先に<wbr>上限を<wbr>決める</h3>
+    <p class="cp-p">電話の鑑定料金は「1分の料金 × 話した分数」です。</p>
+    <p class="cp-p">たとえば、1分300円の占い師と20分話すと6,000円になります。メールは1件ごとの料金です。</p>
+    <p class="cp-p">何分まで、いくらまでと先に決めておけば、料金の目安を持ったうえで相談できます。</p>
+    <h3 class="cp-h3">初回特典の<wbr>条件を<wbr>読む</h3>
+    <p class="cp-p">初回特典を使う場合は、無料になる時間と金額の上限、対象の占い師、使える回数を、申し込む前に公式サイトで確認しておきます。</p>
+    <p class="cp-p">デスティニーの10分無料は、10分か2,450円分のどちらか先に達した時点で終わり、切り替わりのお知らせはありません。1分の料金が高い占い師ほど、早く有料になります。</p>
+    <h3 class="cp-h3">登録したあとで、<wbr>相談するか<wbr>決めても<wbr>大丈夫です</h3>
+    <p class="cp-p">どちらも会員登録は無料です。</p>
+    <p class="cp-p">占い師のプロフィールや口コミを見てから、相談するかどうかを決めることもできます。</p>
+
+    <h2 class="cp-h2">話す前に</h2>
+    <p class="cp-p">聞きたいことを少し整理してから相談したい時は、TOIの「<a class="cp-inline" href="/before-consult/">相談する前に整理しておくこと</a>」も使えます。</p>
+    <p class="cp-p">カードを1枚引いてから、話したいことを考えるのもひとつの方法です。</p>
+
+    <h2 class="cp-h2">占いの<wbr>外へ<wbr>相談したいこと</h2>
+    <p class="cp-p">体や心の不調が続く時、お金や法律について判断が必要な時は、医療機関やその分野の専門家に相談してください。</p>
+    <p class="cp-p">占いは、娯楽や自分の気持ちを考えるためのひとつの手段です。</p>
+
+    <div class="cp-cta">
+      <a class="cp-btn cp-btn-ghost" href="/before-consult/">相談の前に整理すること</a>
+      <a class="cp-btn" href="/">カードを引きに行く ›</a>
+    </div>
+  </article>
+</main>
+<script src="/assets/js/compare.js?v=1791286246"></script>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

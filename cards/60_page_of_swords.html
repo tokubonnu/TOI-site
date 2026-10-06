@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/60_page_of_swords.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ソードのペイジ（PAGE OF SWORDS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「分からない時に、分かったふりをしないことも力です。」ソードのペイジ（PAGE OF SWORDS）が伝えるのは知りたがりという才能の芽。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="ソードのペイジ（PAGE OF SWORDS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「分からない時に、分かったふりをしないことも力です。」ソードのペイジ（PAGE OF SWORDS）が伝えるのは知りたがりという才能の芽。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/60_page_of_swords.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/60_page_of_swords.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ソードのペイジ（PAGE OF SWORDS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「分からない時に、分かったふりをしないことも力です。」ソードのペイジ（PAGE OF SWORDS）が伝えるのは知りたがりという才能の芽。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/60_page_of_swords.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/60_page_of_swords.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"ソード","item":"https://toi.bibon.net/cards/swords/"},{"@type":"ListItem","position":4,"name":"ソードのペイジ（PAGE OF SWORDS）","item":"https://toi.bibon.net/cards/60_page_of_swords.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ソードのペイジ（PAGE OF SWORDS）の意味","description":"「分からない時に、分かったふりをしないことも力です。」ソードのペイジ（PAGE OF SWORDS）が伝えるのは知りたがりという才能の芽。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/60_page_of_swords.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/60_page_of_swords.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/swords/">ソード</a><span>›</span><span aria-current="page">ソードのペイジ</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">ソードの<wbr>ペイジ<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">PAGE OF SWORDS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/60_page_of_swords.webp" alt="ソードのペイジ" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">気になったことを、<wbr>そのままにせず<wbr>確かめたくなる<wbr>時があります。</p>
+        <p class="cp-one">「分からない<wbr>時に、<wbr>分かったふりをしないことも<wbr>力です。」</p>
+        <a class="cp-btn" href="/?c=60_page_of_swords">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">何か引っかかる。まだ理由は分からないけれど、少しだけ気になる。</p><p class="cp-p">そんな小さな違和感や疑問が、調べるきっかけになることがあります。分からないことをすぐ決めつけず、情報を集める。人の話を聞く。自分でも確かめる。</p><p class="cp-p">その姿勢は、これから何かを学ぶ時の大きな助けになります。ただ、知りたい気持ちが強いほど、断片だけで結論を出したくなることもあります。</p><p class="cp-p">一つ聞いた話。ひとつ見つけた情報。それだけですべてが分かった気にならないこと。</p><p class="cp-p">今は判断より、観察の方が大切です。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、小さな疑問や違和感がすでに芽生えていました。見過ごさずに調べたり、人の話を聞いたりしながら答えを探してきました。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、すぐ結論を出すより、情報を集めて確かめることが必要です。ひとつの話だけで判断せず、いくつかの角度から見る時です。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、集めた情報を自分なりに整理することで、納得できる判断につながっていきます。知ることが、そのまま自分の力になっていきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥では、答えそのものより、納得できる根拠を求めています。人に言われたからではなく、自分で確かめて理解したい気持ちがあります。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、新しい情報やさまざまな意見が次々と入ってきます。そのぶん、どれを信じるか自分で見分ける必要もあります。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">行き先では、観察と確認を重ねながら理解を深めていきます。知ったことをそのまま受け取らず、自分の判断材料へ変えていきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-lean_yes">YES 寄り</span></p>
+    <p class="cp-p">まだ調べる余地あり。答えはそのあとで。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">「どうして？」がひとつあると、</span><span class="cp-poem-l">その先を<wbr>知りたくなる。</span><span class="cp-poem-l">答えを<wbr>急ぐより、</span><span class="cp-poem-l">まずはよく<wbr>見るところから。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=60_page_of_swords">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/59_ten_of_swords.html"><img src="/assets/img/cards/59_ten_of_swords.webp" alt="ソードの10" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ソードの<wbr>10</span><span class="cp-mini-en">TEN OF SWORDS</span><span class="cp-mini-kime">終わったことを終わらせるのも、前へ進むひとつの形です。</span></a><a class="cp-mini" href="/cards/61_knight_of_swords.html"><img src="/assets/img/cards/61_knight_of_swords.webp" alt="ソードのナイト" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ソードの<wbr>ナイト</span><span class="cp-mini-en">KNIGHT OF SWORDS</span><span class="cp-mini-kime">速く進める時ほど、何を置いていくかも見て。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/64_ace_of_coins.html"><img src="/assets/img/cards/64_ace_of_coins.webp" alt="コインの1" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>1</span><span class="cp-mini-en">ACE OF COINS</span><span class="cp-mini-kime">可能性は、手に取れる形になった時から現実になります。</span></a><a class="cp-mini" href="/cards/66_three_of_coins.html"><img src="/assets/img/cards/66_three_of_coins.webp" alt="コインの3" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>3</span><span class="cp-mini-en">THREE OF COINS</span><span class="cp-mini-kime">任せられることが増えると、自分にしかできないことも見えてきます。</span></a><a class="cp-mini" href="/cards/69_six_of_coins.html"><img src="/assets/img/cards/69_six_of_coins.webp" alt="コインの6" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>6</span><span class="cp-mini-en">SIX OF COINS</span><span class="cp-mini-kime">支え合いは、同じ日に同じ量を返すことではありません。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

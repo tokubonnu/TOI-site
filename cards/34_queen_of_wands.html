@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/34_queen_of_wands.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワンドのクイーン（QUEEN OF WANDS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「自分らしさを隠さない人ほど、まわりにも熱を広げます。」ワンドのクイーン（QUEEN OF WANDS）が伝えるのは機嫌のよさという才能。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="ワンドのクイーン（QUEEN OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「自分らしさを隠さない人ほど、まわりにも熱を広げます。」ワンドのクイーン（QUEEN OF WANDS）が伝えるのは機嫌のよさという才能。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/34_queen_of_wands.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/34_queen_of_wands.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ワンドのクイーン（QUEEN OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「自分らしさを隠さない人ほど、まわりにも熱を広げます。」ワンドのクイーン（QUEEN OF WANDS）が伝えるのは機嫌のよさという才能。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/34_queen_of_wands.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/34_queen_of_wands.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"ワンド","item":"https://toi.bibon.net/cards/wands/"},{"@type":"ListItem","position":4,"name":"ワンドのクイーン（QUEEN OF WANDS）","item":"https://toi.bibon.net/cards/34_queen_of_wands.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ワンドのクイーン（QUEEN OF WANDS）の意味","description":"「自分らしさを隠さない人ほど、まわりにも熱を広げます。」ワンドのクイーン（QUEEN OF WANDS）が伝えるのは機嫌のよさという才能。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/34_queen_of_wands.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/34_queen_of_wands.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/wands/">ワンド</a><span>›</span><span aria-current="page">ワンドのクイーン</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">ワンドの<wbr>クイーン<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">QUEEN OF WANDS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/34_queen_of_wands.webp" alt="ワンドのクイーン" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">自分らしくいる<wbr>人のまわりには、<wbr>自然と<wbr>人が<wbr>集まります。</p>
+        <p class="cp-one">「自分らしさを<wbr>隠さない<wbr>人ほど、<wbr>まわりにも<wbr>熱を<wbr>広げます。」</p>
+        <a class="cp-btn" href="/?c=34_queen_of_wands">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">ワンドのクイーンは、自分の魅力や情熱を自然に表へ出せるカードです。無理に目立とうとしなくても、自分が好きなことを楽しみ、自信を持って動いている姿そのものが周りを惹きつけます。</p><p class="cp-p">このカードの強さは、誰かより上に立つことではありません。自分の得意なことや個性を隠さず、そのまま使えるところにあります。人と比べて整えるより、自分らしいやり方を続けることで存在感が生まれます。</p><p class="cp-p">一方で、周りの反応が気になり始めると、その明るさが揺らぐことがあります。認められたい気持ちが強くなるほど、いつもの自分らしさまで演じるものになりやすくなります。外からどう見えるかより、自分がその場で自然にいられるかが大切です。</p><p class="cp-p">ワンドのクイーンは、自分の火を持ちながら、周りの火も消さない人です。自分らしくいることが、その場をあたため、人の力まで引き出していきます。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、自分らしく振る舞えたことで人とのつながりが広がった経験があります。その自然な明るさが、今の魅力にもつながっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、自分の好きなことや得意なことを表に出しやすい時です。無理に飾るより、自然な姿の方が周りにも伝わります。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、自分らしく動くほど人や機会が集まりやすくなります。その存在感が、新しいつながりを生むきっかけになります。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、もっと自分らしく振る舞いたい気持ちがあります。周りに合わせるより、自分の熱をそのまま出したいところです。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、あなたの明るさや行動力に惹かれる人がいます。その反応が、新しい交流や機会につながることもあります。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">自分の魅力を自然に出せるほど、周りとのつながりも広がります。無理なく続けられる形で存在感が強くなっていきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-yes">YES</span></p>
+    <p class="cp-p">自分の魅力をそのまま出せる時です。遠慮より自然体で。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">自分が<wbr>好きなものを<wbr>知っていると、</span><span class="cp-poem-l">人の<wbr>目だけで<wbr>選ばなくなります。</span><span class="cp-poem-l">得意なことも、<wbr>心が<wbr>向くことも<wbr>素直に<wbr>使うほど、</span><span class="cp-poem-l">自分らしく<wbr>動ける<wbr>場所が<wbr>広がっていきます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=34_queen_of_wands">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/33_knight_of_wands.html"><img src="/assets/img/cards/33_knight_of_wands.webp" alt="ワンドのナイト" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>ナイト</span><span class="cp-mini-en">KNIGHT OF WANDS</span><span class="cp-mini-kime">勢いは遠くまで運んでくれますが、向きまで決めてはくれません。</span></a><a class="cp-mini" href="/cards/35_king_of_wands.html"><img src="/assets/img/cards/35_king_of_wands.webp" alt="ワンドのキング" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>キング</span><span class="cp-mini-en">KING OF WANDS</span><span class="cp-mini-kime">自分の熱を人と共有できた時、大きな景色が現実に近づきます。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/35_king_of_wands.html"><img src="/assets/img/cards/35_king_of_wands.webp" alt="ワンドのキング" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>キング</span><span class="cp-mini-en">KING OF WANDS</span><span class="cp-mini-kime">自分の熱を人と共有できた時、大きな景色が現実に近づきます。</span></a><a class="cp-mini" href="/cards/36_ace_of_cups.html"><img src="/assets/img/cards/36_ace_of_cups.webp" alt="カップの1" loading="lazy" width="520" height="893"><span class="cp-mini-ja">カップの<wbr>1</span><span class="cp-mini-en">ACE OF CUPS</span><span class="cp-mini-kime">心が動いた瞬間には、もう新しい始まりがあります。</span></a><a class="cp-mini" href="/cards/37_two_of_cups.html"><img src="/assets/img/cards/37_two_of_cups.webp" alt="カップの2" loading="lazy" width="520" height="893"><span class="cp-mini-ja">カップの<wbr>2</span><span class="cp-mini-en">TWO OF CUPS</span><span class="cp-mini-kime">気持ちは、差し出すだけでなく受け取り合うことで関係になります。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

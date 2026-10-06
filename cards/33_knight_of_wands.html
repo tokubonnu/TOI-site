@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/33_knight_of_wands.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワンドのナイト（KNIGHT OF WANDS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「勢いは遠くまで運んでくれますが、向きまで決めてはくれません。」ワンドのナイト（KNIGHT OF WANDS）が伝えるのは熱いうちに動ける瞬発力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="ワンドのナイト（KNIGHT OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「勢いは遠くまで運んでくれますが、向きまで決めてはくれません。」ワンドのナイト（KNIGHT OF WANDS）が伝えるのは熱いうちに動ける瞬発力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/33_knight_of_wands.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/33_knight_of_wands.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ワンドのナイト（KNIGHT OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「勢いは遠くまで運んでくれますが、向きまで決めてはくれません。」ワンドのナイト（KNIGHT OF WANDS）が伝えるのは熱いうちに動ける瞬発力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/33_knight_of_wands.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/33_knight_of_wands.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"ワンド","item":"https://toi.bibon.net/cards/wands/"},{"@type":"ListItem","position":4,"name":"ワンドのナイト（KNIGHT OF WANDS）","item":"https://toi.bibon.net/cards/33_knight_of_wands.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ワンドのナイト（KNIGHT OF WANDS）の意味","description":"「勢いは遠くまで運んでくれますが、向きまで決めてはくれません。」ワンドのナイト（KNIGHT OF WANDS）が伝えるのは熱いうちに動ける瞬発力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/33_knight_of_wands.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/33_knight_of_wands.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/wands/">ワンド</a><span>›</span><span aria-current="page">ワンドのナイト</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">ワンドの<wbr>ナイト<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">KNIGHT OF WANDS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/33_knight_of_wands.webp" alt="ワンドのナイト" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">やりたい<wbr>気持ちが<wbr>強い時は、<wbr>考えるより<wbr>先に<wbr>体が<wbr>動きます。</p>
+        <p class="cp-one">「勢いは<wbr>遠くまで<wbr>運んでくれますが、<wbr>向きまで<wbr>決めてはくれません。」</p>
+        <a class="cp-btn" href="/?c=33_knight_of_wands">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">ワンドのナイトは、強い情熱をそのまま行動へ変えるカードです。興味を持ったものへ飛び込み、考えているだけでは届かない場所まで一気に進んでいきます。</p><p class="cp-p">勢いがある時は、迷いよりも好奇心が勝ちます。新しい場所へ行くこと、知らない相手と関わること、まだ経験のないことを試すこと。その大胆さが、流れを大きく動かすきっかけになります。</p><p class="cp-p">ただ、動きが速いほど、途中で気持ちが変わったり、思っていたより準備が足りなかったりすることもあります。始める力は強くても、最後まで同じ熱を保てるとは限りません。どこまで走るのかを時々確かめることで、勢いを無駄にせずに済みます。</p><p class="cp-p">ワンドのナイトが持つ魅力は、まだ知らない場所へ向かえることです。怖さより先に「行ってみたい」が立つ時、その熱は自分を大きく動かします。あとは、速さに任せすぎず、向かう先を見失わないことです。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、思い切って飛び込んだことで大きく流れが変わった経験があります。その勢いが、今の行動力にも残っています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、気持ちが動いた方向へすぐ行動を起こしやすい時です。熱があるうちに動ける一方で、急ぎすぎないための確認も必要になります。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、新しい場所や経験へ一気に進む場面が増えていきます。勢いをうまく使えれば、今まで届かなかった場所まで足を伸ばせます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、もっと自由に動きたい気持ちがあります。考えるより先に、まず経験してみたいという熱が強くなっています。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、動きたくなる誘いや新しい刺激があります。勢いのある人や出来事に引っ張られやすい時でもあります。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">行動するほど経験が増え、自分の世界も広がっていきます。その中で、本当に追いかけたいものも絞られていきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-lean_yes">YES 寄り</span></p>
+    <p class="cp-p">動く力は十分です。速さだけで決めず、行き先も確かめて。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">行ってみたい<wbr>場所が<wbr>見つかると、</span><span class="cp-poem-l">じっとしている<wbr>方が<wbr>難しくなることがあります。</span><span class="cp-poem-l">その勢いは、<wbr>遠くまで<wbr>運んでくれる<wbr>一方で、</span><span class="cp-poem-l">急ぎすぎると<wbr>大事な曲がり<wbr>角まで<wbr>通り過ぎます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=33_knight_of_wands">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/32_page_of_wands.html"><img src="/assets/img/cards/32_page_of_wands.webp" alt="ワンドのペイジ" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>ペイジ</span><span class="cp-mini-en">PAGE OF WANDS</span><span class="cp-mini-kime">気になる気持ちは、新しい自分を知る入口になります。</span></a><a class="cp-mini" href="/cards/34_queen_of_wands.html"><img src="/assets/img/cards/34_queen_of_wands.webp" alt="ワンドのクイーン" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>クイーン</span><span class="cp-mini-en">QUEEN OF WANDS</span><span class="cp-mini-kime">自分らしさを隠さない人ほど、まわりにも熱を広げます。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/32_page_of_wands.html"><img src="/assets/img/cards/32_page_of_wands.webp" alt="ワンドのペイジ" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>ペイジ</span><span class="cp-mini-en">PAGE OF WANDS</span><span class="cp-mini-kime">気になる気持ちは、新しい自分を知る入口になります。</span></a><a class="cp-mini" href="/cards/29_eight_of_wands.html"><img src="/assets/img/cards/29_eight_of_wands.webp" alt="ワンドの8" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>8</span><span class="cp-mini-en">EIGHT OF WANDS</span><span class="cp-mini-kime">同じ方向へ動きが重なると、流れは一気に速くなります。</span></a><a class="cp-mini" href="/cards/38_three_of_cups.html"><img src="/assets/img/cards/38_three_of_cups.webp" alt="カップの3" loading="lazy" width="520" height="893"><span class="cp-mini-ja">カップの<wbr>3</span><span class="cp-mini-en">THREE OF CUPS</span><span class="cp-mini-kime">喜びを分け合える相手がいると、その出来事はもっと深く残ります。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

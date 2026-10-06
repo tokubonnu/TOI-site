@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/23_two_of_wands.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ワンドの2（TWO OF WANDS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「遠くを見た時、今いる場所で何を選ぶかも見えてきます。」ワンドの2（TWO OF WANDS）が伝えるのは次の一手を選べる立ち位置。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="ワンドの2（TWO OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「遠くを見た時、今いる場所で何を選ぶかも見えてきます。」ワンドの2（TWO OF WANDS）が伝えるのは次の一手を選べる立ち位置。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/23_two_of_wands.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/23_two_of_wands.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ワンドの2（TWO OF WANDS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「遠くを見た時、今いる場所で何を選ぶかも見えてきます。」ワンドの2（TWO OF WANDS）が伝えるのは次の一手を選べる立ち位置。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/23_two_of_wands.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/23_two_of_wands.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"ワンド","item":"https://toi.bibon.net/cards/wands/"},{"@type":"ListItem","position":4,"name":"ワンドの2（TWO OF WANDS）","item":"https://toi.bibon.net/cards/23_two_of_wands.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ワンドの2（TWO OF WANDS）の意味","description":"「遠くを見た時、今いる場所で何を選ぶかも見えてきます。」ワンドの2（TWO OF WANDS）が伝えるのは次の一手を選べる立ち位置。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/23_two_of_wands.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/23_two_of_wands.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/wands/">ワンド</a><span>›</span><span aria-current="page">ワンドの2</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">ワンドの<wbr>2<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">TWO OF WANDS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/23_two_of_wands.webp" alt="ワンドの2" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">見えている<wbr>世界が<wbr>広がると、<wbr>今いる<wbr>場所も<wbr>違って<wbr>見えてきます。</p>
+        <p class="cp-one">「遠くを<wbr>見た時、<wbr>今いる<wbr>場所で<wbr>何を<wbr>選ぶかも<wbr>見えてきます。」</p>
+        <a class="cp-btn" href="/?c=23_two_of_wands">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">ワンドの2は、今いる場所から少し先を見渡し、これからの方向を考えるカードです。まだ出発してはいなくても、目の前の世界だけがすべてではないことには気づき始めています。</p><p class="cp-p">可能性が広がるほど、選ぶことも増えていきます。このまま進むのか、少し遠い場所へ手を伸ばすのか。どちらにも魅力があるからこそ、何を求めているのかを自分の中で確かめることが必要になります。</p><p class="cp-p">一方で、考える時間が長くなるほど、まだ動かない理由も増えていきます。準備が整うのを待ち続ければ、安全な場所から景色を眺めるだけになることもあります。計画は進むためのものですが、動きを止める壁にもなります。</p><p class="cp-p">遠くへ行くことだけが、このカードの答えではありません。大切なのは、今いる場所を知ったうえで、どこまで世界を広げたいのかを決めることです。見えてきた可能性に道筋を与えることで、次の一歩が現実に近づいていきます。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、今の場所にとどまりながら、その先の可能性を考えてきた時間があります。その視線が、次の選択肢を広げています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、目の前だけでなく少し先まで見渡す時です。何ができるかより、どこへ向かいたいのかが決まると、準備することもはっきりしてきます。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、考えてきた計画を実際の動きへ変える場面が来ます。遠くに見えていたものが、少しずつ具体的な選択肢になっていきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、今より少し広い世界を見てみたい気持ちがあります。慣れた場所への安心と、その外へ向かう好奇心が並んでいます。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、これまでより広い選択肢や、新しい方向を考える材料があります。まだ手を伸ばしていない可能性も残っています。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">考えていた未来に少しずつ道筋がつき、動く準備が整っていきます。何を選ぶかが定まるほど、遠かった場所も現実に近づきます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-lean_yes">YES 寄り</span></p>
+    <p class="cp-p">可能性は広がっています。動く前に、行きたい先を具体的に見て。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">今いる<wbr>場所から<wbr>遠くを<wbr>眺めると、</span><span class="cp-poem-l">これまで<wbr>考えなかった<wbr>行き先まで<wbr>目に<wbr>入ります。</span><span class="cp-poem-l">行ってみたい<wbr>場所が<wbr>具体的になるほど、</span><span class="cp-poem-l">憧れは<wbr>地図へ、<wbr>迷いは<wbr>準備へ<wbr>変わっていきます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=23_two_of_wands">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/22_ace_of_wands.html"><img src="/assets/img/cards/22_ace_of_wands.webp" alt="ワンドの1" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>1</span><span class="cp-mini-en">ACE OF WANDS</span><span class="cp-mini-kime">心が動いた瞬間は、始まりに気づいた瞬間でもあります。</span></a><a class="cp-mini" href="/cards/24_three_of_wands.html"><img src="/assets/img/cards/24_three_of_wands.webp" alt="ワンドの3" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>3</span><span class="cp-mini-en">THREE OF WANDS</span><span class="cp-mini-kime">進んだからこそ、前にはなかった景色が見えてきます。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/28_seven_of_wands.html"><img src="/assets/img/cards/28_seven_of_wands.webp" alt="ワンドの7" loading="lazy" width="520" height="893"><span class="cp-mini-ja">ワンドの<wbr>7</span><span class="cp-mini-en">SEVEN OF WANDS</span><span class="cp-mini-kime">守るものが決まると、使う力にも迷いが減ります。</span></a><a class="cp-mini" href="/cards/12_hanged_man.html"><img src="/assets/img/cards/12_hanged_man.webp" alt="吊るされた男" loading="lazy" width="520" height="893"><span class="cp-mini-ja">吊るされた<wbr>男</span><span class="cp-mini-en">THE HANGED MAN</span><span class="cp-mini-kime">動けない時には、動いていた時とは違うものが見えます。</span></a><a class="cp-mini" href="/cards/11_justice.html"><img src="/assets/img/cards/11_justice.webp" alt="正義" loading="lazy" width="520" height="893"><span class="cp-mini-ja">正義</span><span class="cp-mini-en">JUSTICE</span><span class="cp-mini-kime">選んだ理由まで引き受けられる時、判断に迷いが減ります。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/before-consult/", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>占い師に相談する前に、整理しておくこと ｜ TOI 問いのタロット</title>
+<meta name="description" content="占い師に話す前に、メモに書いておくとよい5つのこと。いちばん聞きたいこと、分かっていることと想像していること、残したいもの、持ち帰りたいもの、時間と金額の上限。TOI の問いで、相談の前に自分を整えます。">
+<meta property="og:title" content="占い師に相談する前に、整理しておくこと ｜ TOI 問いのタロット">
+<meta property="og:description" content="占い師に話す前に、メモに書いておくとよい5つのこと。いちばん聞きたいこと、分かっていることと想像していること、残したいもの、持ち帰りたいもの、時間と金額の上限。TOI の問いで、相談の前に自分を整えます。">
+<meta property="og:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/before-consult/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="占い師に相談する前に、整理しておくこと ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="占い師に話す前に、メモに書いておくとよい5つのこと。いちばん聞きたいこと、分かっていることと想像していること、残したいもの、持ち帰りたいもの、時間と金額の上限。TOI の問いで、相談の前に自分を整えます。">
+<meta name="twitter:image" content="https://toi.bibon.net/assets/img/ogp_default.jpg">
+<link rel="canonical" href="https://toi.bibon.net/before-consult/">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"相談する前に、整理しておくこと","item":"https://toi.bibon.net/before-consult/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"相談する前に、整理しておくこと","description":"占い師に話す前に、メモに書いておくとよい5つのこと。いちばん聞きたいこと、分かっていることと想像していること、残したいもの、持ち帰りたいもの、時間と金額の上限。TOI の問いで、相談の前に自分を整えます。","image":"https://toi.bibon.net/assets/img/ogp_default.jpg","inLanguage":"ja","datePublished":"2026-10-06","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/before-consult/"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><span aria-current="page">相談する前に、整理しておくこと</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1 cp-h1-hub">相談する<wbr>前に、<wbr>整理しておくこと</h1>
+    <p class="cp-p">占い師に相談する前に、聞きたいことを少し書き出しておくと、限られた時間の中で何から話すかが見えやすくなります。TOIが大事にしているのは、占いの答えより、今日の自分への問いです。</p>
+    <p class="cp-p">ここでは、相談の前にメモしておくとよい5つのことを並べます。5つすべてを書く必要はありません。</p>
+
+    <h2 class="cp-h2">メモに<wbr>書いておく<wbr>5つのこと</h2>
+    <h3 class="cp-h3 bc-q"><span class="bc-n">1</span>いちばん<wbr>聞きたいことを、<wbr>一文にする</h3><p class="cp-p">「これからどうなるか」だけでは、相談の範囲が広くなります。「連絡が止まって一週間。自分から送るかどうか迷っている」のように、今の場面と迷っている点を一文にします。</p><p class="cp-p">いきさつは、そのあとに足せます。最初の一文があると、何から話すかを決めやすくなります。</p>
+<h3 class="cp-h3 bc-q"><span class="bc-n">2</span>分かっていることと、<wbr>想像していることを<wbr>分ける</h3><p class="cp-p">「返事がまだ来ていない」は分かっていること。「嫌われたのかも」は想像です。紙を左右に分けて書いておくと、事実と考えていることを分けて見られます。</p><p class="cp-p">想像の欄が長くなったら、その部分も相談で話す材料になります。</p>
+<h3 class="cp-h3 bc-q"><span class="bc-n">3</span>どちらを<wbr>選んでも、<wbr>残したいもの</h3><p class="cp-p">迷いが二択なら、どちらを選んでも残したいものを書きます。安心できる時間、続けたい仕事、自分のペース。</p><p class="cp-p">選択肢を見る時の基準になります。占い師の言葉も、その基準と照らしながら受け取れます。</p>
+<h3 class="cp-h3 bc-q"><span class="bc-n">4</span>相談で<wbr>持ち帰りたいもの</h3><p class="cp-p">答えを聞きたいのか、気持ちを整理したいのか、話を聞いてほしいのか。最初に伝えておくと、相談の向きがそろいます。</p><p class="cp-p">「今日は決めたいのではなく、整理したい」と伝える方法もあります。</p>
+<h3 class="cp-h3 bc-q"><span class="bc-n">5</span>時間と<wbr>金額の<wbr>上限</h3><p class="cp-p">電話占いは、1分ごとに料金がかかります。何分まで、いくらまでを先に決め、メモのいちばん上に書いておきます。</p><p class="cp-p">途中で終えたい時は、その時点で終えることもできます。上限が見えていると、時間と金額を確認しながら相談できます。</p>
+
+    <h2 class="cp-h2">カードを<wbr>引いてから<wbr>話す</h2>
+    <p class="cp-p">3枚引き（過去・現在・未来）で今の流れを並べてから、いちばん気になった一枚を言葉にして持っていく方法もあります。カードの言葉を答えとして受け取るのではなく、何を話したいのかを見つけるきっかけとして使えます。</p>
+    <p class="cp-p">それぞれのカードの意味は、<a class="cp-inline" href="/cards/">カードの意味一覧</a>から読めます。</p>
+
+    <h2 class="cp-h2">占いの<wbr>外へ<wbr>相談したいこと</h2>
+    <p class="cp-p">体や心の不調が続く時、お金や法律のことで判断が必要な時は、医療機関やその分野の専門家に相談してください。占いは、娯楽や自分の気持ちを考えるためのひとつの手段です。</p>
+
+    <h2 class="cp-h2">相談先を<wbr>選ぶ時は</h2>
+    <p class="cp-p">料金や初回特典の条件は、会社ごとに違います。TOIが提携している2社については、<a class="cp-inline" href="/compare/">相談先の選び方</a>（広告を含みます）にまとめています。</p>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/">カードを引きに行く ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/compare/">相談先の選び方</a>
+    </div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

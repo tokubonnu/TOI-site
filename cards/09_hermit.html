@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/09_hermit.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隠者（THE HERMIT）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「遠くの答えより、今見えている一歩が道をつくります。」隠者（THE HERMIT）が伝えるのはひとりの時間が灯す明かり。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="隠者（THE HERMIT）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「遠くの答えより、今見えている一歩が道をつくります。」隠者（THE HERMIT）が伝えるのはひとりの時間が灯す明かり。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/09_hermit.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/09_hermit.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="隠者（THE HERMIT）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「遠くの答えより、今見えている一歩が道をつくります。」隠者（THE HERMIT）が伝えるのはひとりの時間が灯す明かり。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/09_hermit.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/09_hermit.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"大アルカナ","item":"https://toi.bibon.net/cards/major/"},{"@type":"ListItem","position":4,"name":"隠者（THE HERMIT）","item":"https://toi.bibon.net/cards/09_hermit.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"隠者（THE HERMIT）の意味","description":"「遠くの答えより、今見えている一歩が道をつくります。」隠者（THE HERMIT）が伝えるのはひとりの時間が灯す明かり。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/09_hermit.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/09_hermit.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/major/">大アルカナ</a><span>›</span><span aria-current="page">隠者</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">隠者<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">THE HERMIT</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/09_hermit.webp" alt="隠者" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">静かな<wbr>場所に<wbr>戻ると、<wbr>見えてくる<wbr>答えがあります。</p>
+        <p class="cp-one">「遠くの<wbr>答えより、<wbr>今見えている<wbr>一歩が<wbr>道をつくります。」</p>
+        <a class="cp-btn" href="/?c=09_hermit">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">隠者は、外の声から少し距離を置き、自分の中で考える時間を表すカードです。人の意見や周りの流れに触れ続けていると、自分が最初に何を感じていたのかが見えにくくなることがあります。静かな場所へ戻ることで、ようやく聞こえてくるものがあります。</p><p class="cp-p">今すぐ先の全部を知る必要はありません。隠者の灯りが照らすのも、目の前のわずかな範囲だけです。次に何をするかが見えているなら、まずはそこまで進む。その一歩を重ねるうちに、前にはなかった景色が少しずつ現れてきます。</p><p class="cp-p">ひとりで考える時間は、自分の考えを深めてくれます。ただ、長く閉じこもりすぎると、考えが同じ場所を回り始めることもあります。静けさが必要なのか、それとも外から新しい風を入れる時なのか。その違いは見ておきたいところです。</p><p class="cp-p">答えは、大きなひらめきとして現れるとは限りません。何度考えても残ることや、静かになった時に戻ってくる感覚。その小さな灯りを頼りに進むうちに、自分にとって必要な道が見えてきます。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、ひとりで考え直した時間や、周りから少し離れて自分の答えを探した経験があります。その時間の中で見つけたものが、今も判断の支えになっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、外から答えを集め続けるより、自分の中に残っているものを見る時です。次の一歩が見えているなら、それだけでも十分な手がかりになります。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、静かに考えてきたことが少しずつ道筋になっていきます。最初から全体が見えるのではなく、進むたびに次の景色が現れてきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、周りの声から離れて、自分の考えを確かめたい気持ちがあります。すでに気づいていることを、静かに整理したいところです。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりの動きは少し遠く感じられます。今は、その距離があることで見えるものもあります。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">自分の中で確かめたことが、これから進む道の目印になっていきます。答えを急がなかった時間が、あとから意味を持ちます。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-lean_no">NO 寄り</span></p>
+    <p class="cp-p">急いで決めるより、静かに考える時間が答えを近づけます。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">遠くの<wbr>答えを<wbr>探し続けても、</span><span class="cp-poem-l">今照らせるのは、<wbr>足元のわずかな<wbr>場所だけ。</span><span class="cp-poem-l">その小さな<wbr>明かりを<wbr>頼りに<wbr>進むうちに、</span><span class="cp-poem-l">次に<wbr>照らす<wbr>場所が、<wbr>またひとつ<wbr>現れます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=09_hermit">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/08_strength.html"><img src="/assets/img/cards/08_strength.webp" alt="力" loading="lazy" width="520" height="893"><span class="cp-mini-ja">力</span><span class="cp-mini-en">STRENGTH</span><span class="cp-mini-kime">感情は、抑えるより扱えるようになる方が強い。</span></a><a class="cp-mini" href="/cards/10_wheel_of_fortune.html"><img src="/assets/img/cards/10_wheel_of_fortune.webp" alt="運命の輪" loading="lazy" width="520" height="893"><span class="cp-mini-ja">運命の<wbr>輪</span><span class="cp-mini-en">WHEEL OF FORTUNE</span><span class="cp-mini-kime">流れが変わる時、今まで見えなかった道が現れます。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/11_justice.html"><img src="/assets/img/cards/11_justice.webp" alt="正義" loading="lazy" width="520" height="893"><span class="cp-mini-ja">正義</span><span class="cp-mini-en">JUSTICE</span><span class="cp-mini-kime">選んだ理由まで引き受けられる時、判断に迷いが減ります。</span></a><a class="cp-mini" href="/cards/12_hanged_man.html"><img src="/assets/img/cards/12_hanged_man.webp" alt="吊るされた男" loading="lazy" width="520" height="893"><span class="cp-mini-ja">吊るされた<wbr>男</span><span class="cp-mini-en">THE HANGED MAN</span><span class="cp-mini-kime">動けない時には、動いていた時とは違うものが見えます。</span></a><a class="cp-mini" href="/cards/05_hierophant.html"><img src="/assets/img/cards/05_hierophant.webp" alt="教皇" loading="lazy" width="520" height="893"><span class="cp-mini-ja">教皇</span><span class="cp-mini-en">THE HIEROPHANT</span><span class="cp-mini-kime">受け継いだ言葉は、自分で確かめて初めて知恵になる。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

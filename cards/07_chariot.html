@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/07_chariot.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>戦車（THE CHARIOT）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「力を増やすより、向ける先を決めた方が進める時があります。」戦車（THE CHARIOT）が伝えるのは迷いごと前へ運ぶ推進力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="戦車（THE CHARIOT）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「力を増やすより、向ける先を決めた方が進める時があります。」戦車（THE CHARIOT）が伝えるのは迷いごと前へ運ぶ推進力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/07_chariot.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/07_chariot.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="戦車（THE CHARIOT）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「力を増やすより、向ける先を決めた方が進める時があります。」戦車（THE CHARIOT）が伝えるのは迷いごと前へ運ぶ推進力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/07_chariot.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/07_chariot.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"大アルカナ","item":"https://toi.bibon.net/cards/major/"},{"@type":"ListItem","position":4,"name":"戦車（THE CHARIOT）","item":"https://toi.bibon.net/cards/07_chariot.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"戦車（THE CHARIOT）の意味","description":"「力を増やすより、向ける先を決めた方が進める時があります。」戦車（THE CHARIOT）が伝えるのは迷いごと前へ運ぶ推進力。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/07_chariot.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/07_chariot.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/major/">大アルカナ</a><span>›</span><span aria-current="page">戦車</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">戦車<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">THE CHARIOT</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/07_chariot.webp" alt="戦車" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">進みたい<wbr>方向が<wbr>決まると、<wbr>ばらばらだった<wbr>力がひとつに<wbr>集まります。</p>
+        <p class="cp-one">「力を<wbr>増やすより、<wbr>向ける<wbr>先を<wbr>決めた<wbr>方が<wbr>進める<wbr>時があります。」</p>
+        <a class="cp-btn" href="/?c=07_chariot">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">戦車は、ひとつの方向へ力を集めて進むカードです。やりたいことがいくつもあったり、気持ちと現実が違う方を向いていたりすると、どれだけ力があっても前には進みにくくなります。今は、まず行き先を決めることが大切です。</p><p class="cp-p">すべてが同じ方向を向いている必要はありません。迷いが残っていても、周りの意見が分かれていても、自分がどちらへ進むのかを決めれば動き出せます。戦車が持っているのは、迷わない強さではなく、迷いを抱えたままでも進路を保つ力です。</p><p class="cp-p">ただ、前へ進むことばかりに意識が向くと、速さそのものが目的になることがあります。焦って結果を求めたり、周りを置いていったりすると、進んではいても思っていた場所からずれていきます。勢いがある時ほど、方向を確かめることが必要です。</p><p class="cp-p">力が足りないのではなく、向ける先が定まっていないだけのこともあります。何を優先し、何を今は脇に置くのか。そこが決まった時、ばらばらだった力が同じ方向へ動き始めます。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、迷いながらも進む方向を選び、力を集中させてきた場面があります。その決断が、今の流れをつくっています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、あれもこれも動かすより、ひとつの方向へ力を集めたい時です。優先するものが決まるほど、動きもはっきりしてきます。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、決めた方向へ勢いがついていきます。途中で迷う場面があっても、進む先を見失わなければ流れは続いていきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、もう進みたい方向があります。ただ、別の気持ちや事情も残っていて、まだ力が分かれているところです。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、あなたを前へ押すものと、別の方向へ引くものの両方があります。どちらに力を渡すかで、進み方も変わってきます。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">力をひとつの方向へ集めるほど、流れは速くなっていきます。途中で軌道を確かめながら進むことが、その勢いを生かします。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-yes">YES</span></p>
+    <p class="cp-p">進む力はあります。行き先をひとつに絞ることが鍵です。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">進みたい<wbr>方向が<wbr>決まれば、</span><span class="cp-poem-l">迷いが<wbr>残っていても<wbr>車輪は<wbr>動き出します。</span><span class="cp-poem-l">違う方へ<wbr>引く力があっても、</span><span class="cp-poem-l">進路を<wbr>選び続ける<wbr>意志が<wbr>前へ<wbr>運んでくれます。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=07_chariot">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/06_lovers.html"><img src="/assets/img/cards/06_lovers.webp" alt="恋人" loading="lazy" width="520" height="893"><span class="cp-mini-ja">恋人</span><span class="cp-mini-en">THE LOVERS</span><span class="cp-mini-kime">惹かれる理由をたどると、自分が大切にしているものが見えてくる。</span></a><a class="cp-mini" href="/cards/08_strength.html"><img src="/assets/img/cards/08_strength.webp" alt="力" loading="lazy" width="520" height="893"><span class="cp-mini-ja">力</span><span class="cp-mini-en">STRENGTH</span><span class="cp-mini-kime">感情は、抑えるより扱えるようになる方が強い。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/06_lovers.html"><img src="/assets/img/cards/06_lovers.webp" alt="恋人" loading="lazy" width="520" height="893"><span class="cp-mini-ja">恋人</span><span class="cp-mini-en">THE LOVERS</span><span class="cp-mini-kime">惹かれる理由をたどると、自分が大切にしているものが見えてくる。</span></a><a class="cp-mini" href="/cards/10_wheel_of_fortune.html"><img src="/assets/img/cards/10_wheel_of_fortune.webp" alt="運命の輪" loading="lazy" width="520" height="893"><span class="cp-mini-ja">運命の<wbr>輪</span><span class="cp-mini-en">WHEEL OF FORTUNE</span><span class="cp-mini-kime">流れが変わる時、今まで見えなかった道が現れます。</span></a><a class="cp-mini" href="/cards/01_magician.html"><img src="/assets/img/cards/01_magician.webp" alt="魔術師" loading="lazy" width="520" height="893"><span class="cp-mini-ja">魔術師</span><span class="cp-mini-en">THE MAGICIAN</span><span class="cp-mini-kime">持っている力は、使うことで初めて答えになります。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>

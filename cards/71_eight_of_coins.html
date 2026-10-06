@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LFDS0VE7T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var internal = false, q = null;
+    try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+    try {
+      if (q === '1') localStorage.setItem('toi_internal', '1');
+      else if (q === '0') localStorage.removeItem('toi_internal');
+      internal = localStorage.getItem('toi_internal') === '1';
+    } catch (e) {}
+    if (q === '1') internal = true;
+    try { if (navigator.webdriver || location.hostname !== 'toi.bibon.net') internal = true; } catch (e) {}
+    window.TOI_INTERNAL = internal;
+    var PAGE = "https://toi.bibon.net/cards/71_eight_of_coins.html", UTM = {"utm_source": {"threads": 1, "instagram": 1}, "utm_medium": {"social": 1}, "utm_campaign": {"konya_no_toi": 1}}, EVENTS = {"draw_start": 1, "reading_complete": 1, "reading_abort": 1, "aff_view": 1, "aff_click": 1, "compare_view": 1}, ENUMS = {"spread": {"today": 1, "yesno": 1, "choice": 1, "ppf": 1, "hex": 1}, "skipped": {"yes": 1, "no": 1}, "slot": {"deep": 1, "mid": 1}, "pid": {"7674": 1, "8084": 1}, "placement": {"result": 1, "compare": 1}, "traffic_type": {"internal": 1}}, NUMS = {"cards": [1, 10]}, HAS = Object.prototype.hasOwnProperty;
+    function utmOnly(search){
+      var o = new URLSearchParams(), s;
+      try { s = new URLSearchParams(search); } catch (e) { return ''; }
+      for (var k in UTM) { if (HAS.call(UTM, k)) { var v = s.get(k); if (v !== null && HAS.call(UTM[k], v)) o.set(k, v); } }
+      return o.toString();
+    }
+    function originOnly(u){ try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.origin + '/' : ''; } catch (e) { return ''; } }
+    function okValue(k, v){
+      if (HAS.call(ENUMS, k)) return typeof v === 'string' && HAS.call(ENUMS[k], v);
+      if (HAS.call(NUMS, k)) return typeof v === 'number' && v % 1 === 0 && v >= NUMS[k][0] && v <= NUMS[k][1];
+      if (k === 'card_ids') return typeof v === 'string' && /^[0-9]{1,2}(-[0-9]{1,2}){0,9}$/.test(v) && v.split('-').every(function(n){ return +n <= 77; });
+      return false;
+    }
+    window.toiCleanUrl = function(search){ var qs = utmOnly(search); return PAGE + (qs ? '?' + qs : ''); };
+    window.toiTrack = function(name, params){
+      try {
+        if (!HAS.call(EVENTS, String(name))) return;
+        var p = {}, k, src = params || {};
+        for (k in src) { if (HAS.call(src, k) && okValue(k, src[k])) p[k] = src[k]; }
+        if (internal) p.traffic_type = 'internal';
+        gtag('event', name, p);
+      } catch (e) {}
+    };
+    var base = { page_location: window.toiCleanUrl(location.search) };
+    if (document.referrer) base.page_referrer = originOnly(document.referrer);
+    if (internal) base.traffic_type = 'internal';
+    gtag('set', base);
+    window.TOI_GA_CONFIG = base;
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-9LFDS0VE7T', window.TOI_GA_CONFIG || {});
+</script>
+<!-- /GA4 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コインの8（ペンタクルの8・EIGHT OF COINS）の意味 ｜ TOI 問いのタロット</title>
+<meta name="description" content="「昨日できなかったことを、今日はもう迷わずやっています。」コインの8（ペンタクルの8・EIGHT OF COINS）が伝えるのはコツコツという最速の魔法。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:title" content="コインの8（ペンタクルの8・EIGHT OF COINS）の意味 ｜ TOI 問いのタロット">
+<meta property="og:description" content="「昨日できなかったことを、今日はもう迷わずやっています。」コインの8（ペンタクルの8・EIGHT OF COINS）が伝えるのはコツコツという最速の魔法。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta property="og:image" content="https://toi.bibon.net/ogp/71_eight_of_coins.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://toi.bibon.net/cards/71_eight_of_coins.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TOI">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="コインの8（ペンタクルの8・EIGHT OF COINS）の意味 ｜ TOI 問いのタロット">
+<meta name="twitter:description" content="「昨日できなかったことを、今日はもう迷わずやっています。」コインの8（ペンタクルの8・EIGHT OF COINS）が伝えるのはコツコツという最速の魔法。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。">
+<meta name="twitter:image" content="https://toi.bibon.net/ogp/71_eight_of_coins.jpg">
+<link rel="canonical" href="https://toi.bibon.net/cards/71_eight_of_coins.html">
+<meta name="theme-color" content="#08070f">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css?v=1791286246">
+<link rel="stylesheet" href="/assets/css/card.css?v=1791286246">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://toi.bibon.net/"},{"@type":"ListItem","position":2,"name":"カードの意味一覧","item":"https://toi.bibon.net/cards/"},{"@type":"ListItem","position":3,"name":"コイン","item":"https://toi.bibon.net/cards/coins/"},{"@type":"ListItem","position":4,"name":"コインの8（EIGHT OF COINS）","item":"https://toi.bibon.net/cards/71_eight_of_coins.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"コインの8（EIGHT OF COINS）の意味","description":"「昨日できなかったことを、今日はもう迷わずやっています。」コインの8（ペンタクルの8・EIGHT OF COINS）が伝えるのはコツコツという最速の魔法。過去・現在・未来の位置ごとの読み方、Yes/Noで引いたときの出方まで、TOIの書き下ろし解説でどうぞ。","image":"https://toi.bibon.net/ogp/71_eight_of_coins.jpg","inLanguage":"ja","datePublished":"2026-07-15","dateModified":"2026-10-06","author":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"publisher":{"@type":"Organization","name":"B.B.T","url":"https://toi.bibon.net/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://toi.bibon.net/cards/71_eight_of_coins.html"},"isPartOf":{"@type":"WebSite","name":"TOI 問いのタロット","url":"https://toi.bibon.net/"}}</script>
+</head>
+<body class="cp-body">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="cp-head">
+  <a href="/" class="cp-logo-link" aria-label="TOI ホーム"><img src="/assets/img/logo.webp" alt="TOI" class="cp-logo"></a>
+  <nav class="cp-nav" aria-label="サイト内"><a href="/">カードを引く</a><a href="/cards/">カードの意味一覧</a><a href="/about.html">このタロットについて</a></nav>
+</header>
+<main class="cp-wrap">
+  <nav class="cp-crumb" aria-label="パンくず"><a href="/">ホーム</a><span>›</span><a href="/cards/">カードの意味一覧</a><span>›</span><a href="/cards/coins/">コイン</a><span>›</span><span aria-current="page">コインの8</span></nav>
+  <article class="cp-article">
+    <h1 class="cp-h1"><span class="cp-h1-name">コインの<wbr>8<span class="cp-h1-tail">の<wbr>意味</span></span><span class="cp-h1-en">EIGHT OF COINS</span></h1>
+    <section class="cp-lead">
+      <img class="cp-img" src="/assets/img/cards/71_eight_of_coins.webp" alt="コインの8" width="520" height="893">
+      <div class="cp-lead-txt">
+        
+        <p class="cp-kime">上達は、<wbr>できなかった<wbr>頃を<wbr>忘れたところにも<wbr>積もっています。</p>
+        <p class="cp-one">「昨日できなかったことを、<wbr>今日はもう<wbr>迷わずやっています。」</p>
+        <a class="cp-btn" href="/?c=71_eight_of_coins">このカードを引いてみる ›</a>
+      </div>
+    </section>
+
+    <h2 class="cp-h2">このカードが<wbr>伝えていること</h2>
+    <p class="cp-p cp-p-dim">TOI では逆位置を使わず、正位置の意味で読みます。</p>
+    <p class="cp-p">また同じ作業、また修正、また練習。</p><p class="cp-p">でも、本当に同じ一回ではありません。前なら迷ったところで手が止まらない。気づかなかった違いが見える。直す場所が分かる。</p><p class="cp-p">小さすぎて自分では気づかない変化が、確実に積み重なっています。大きな成果だけを基準にすると、その途中が全部足りなく見えてしまいます。</p><p class="cp-p">今は完成を急ぐより、今日の一回を丁寧にする。</p><p class="cp-p">それを続けた先で、いつの間にか「できること」の方が普通になっていきます。</p>
+
+    <h2 class="cp-h2">位置で<wbr>読む</h2>
+    <h3 class="cp-h3">過去に<wbr>出たとき</h3><p class="cp-p">ここまでには、地道な練習や同じ作業を何度も重ねてきた時間があります。自分では気づかないところにも、その繰り返しが技術として残っています。</p>
+    <h3 class="cp-h3">現在に<wbr>出たとき</h3><p class="cp-p">いまは、目の前の一つを丁寧に仕上げることが力になります。大きな成果より、昨日より自然にできるようになった部分を見る時です。</p>
+    <h3 class="cp-h3">未来に<wbr>出たとき</h3><p class="cp-p">この先は、繰り返してきたことが技術として定着し、自信へつながっていきます。考えなくても手が動く部分が、少しずつ増えていきます。</p>
+
+    <h2 class="cp-h2">さらに<wbr>深く読む</h2>
+    <h3 class="cp-h3">心の<wbr>奥</h3><p class="cp-p">心の奥には、もっと上手になりたい、きちんとできるようになりたい気持ちがあります。自分で納得できるところまで磨きたい思いがあります。</p>
+    <h3 class="cp-h3">まわり</h3><p class="cp-p">まわりには、努力や技術を見てくれる人がいます。すぐ目立たなくても、積み重ねてきた部分は評価につながりやすい環境です。</p>
+    <h3 class="cp-h3">行き先</h3><p class="cp-p">行き先では、一回ずつ積み上げたものが、自分の技術として定着していきます。できなかった頃を思い出さないほど、自然に使える力になります。</p>
+
+    <h2 class="cp-h2">Yes / Noで<wbr>引いたとき</h2>
+    <p class="cp-yn"><span class="cp-yn-badge cp-yn-yes">YES</span></p>
+    <p class="cp-p">YES。派手さより、続けられるやり方で。</p>
+
+    <section class="cp-poem" aria-label="短詩">
+      <span class="cp-poem-l">同じように<wbr>見える<wbr>一回でも、</span><span class="cp-poem-l">昨日とは<wbr>少し違う。</span><span class="cp-poem-l">手は、</span><span class="cp-poem-l">自分より<wbr>先に<wbr>覚えていることがあります。</span>
+    </section>
+
+    <div class="cp-cta">
+      <a class="cp-btn" href="/?c=71_eight_of_coins">このカードを引いてみる ›</a>
+      <a class="cp-btn cp-btn-ghost" href="/">今日の一枚を引く</a>
+    </div>
+
+    <p class="cp-consult">カードを見て、誰かに話しながら整理したくなった時は、<a href="/before-consult/">相談する前に整理しておくこと</a>／<a href="/compare/">相談先の選び方</a>（広告を含みます）</p>
+
+    <h2 class="cp-h2">となりの<wbr>カード</h2>
+    <div class="cp-grid cp-grid-2"><a class="cp-mini" href="/cards/70_seven_of_coins.html"><img src="/assets/img/cards/70_seven_of_coins.webp" alt="コインの7" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>7</span><span class="cp-mini-en">SEVEN OF COINS</span><span class="cp-mini-kime">待つなら、何が育っているのかを見ながら待って。</span></a><a class="cp-mini" href="/cards/72_nine_of_coins.html"><img src="/assets/img/cards/72_nine_of_coins.webp" alt="コインの9" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>9</span><span class="cp-mini-en">NINE OF COINS</span><span class="cp-mini-kime">自分で作った安心は、誰かに認められなくても消えません。</span></a></div>
+
+    <h2 class="cp-h2">近い温度の<wbr>カード</h2>
+    <div class="cp-grid cp-grid-3"><a class="cp-mini" href="/cards/72_nine_of_coins.html"><img src="/assets/img/cards/72_nine_of_coins.webp" alt="コインの9" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>9</span><span class="cp-mini-en">NINE OF COINS</span><span class="cp-mini-kime">自分で作った安心は、誰かに認められなくても消えません。</span></a><a class="cp-mini" href="/cards/73_ten_of_coins.html"><img src="/assets/img/cards/73_ten_of_coins.webp" alt="コインの10" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>10</span><span class="cp-mini-en">TEN OF COINS</span><span class="cp-mini-kime">受け取ったものの続きに、自分が何を足すか。</span></a><a class="cp-mini" href="/cards/76_queen_of_coins.html"><img src="/assets/img/cards/76_queen_of_coins.webp" alt="コインのクイーン" loading="lazy" width="520" height="893"><span class="cp-mini-ja">コインの<wbr>クイーン</span><span class="cp-mini-en">QUEEN OF COINS</span><span class="cp-mini-kime">自分を整えることも、誰かを大切にする準備です。</span></a></div>
+  </article>
+</main>
+<footer class="cp-foot">
+  <p>カードの絵柄は、パメラ・コールマン・スミスが描き1909〜1910年に公開された原典のスキャン（パブリックドメイン）を使用しています。</p>
+  <p class="cp-foot-nav"><a href="/">TOI 問いのタロット</a> ／ <a href="/cards/">カードの意味一覧</a> ／ <a href="/about.html">このタロットについて・免責</a></p>
+  <p class="cp-copy">© B.B.T</p>
+</footer>
+<script src="/assets/js/fx.js?v=1791286246"></script>
+</body>
+</html>
