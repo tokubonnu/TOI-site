@@ -1,0 +1,160 @@
+/* カード辞典ページ（/cards/）専用。style.css の後に読む＝変数を継承する。
+   本体 style.css は body を overflow:hidden にしているので、about.html と同じく最初に解除する。 */
+body.cp-body { overflow-y: auto; position: static; background-attachment: fixed; }
+
+.cp-head {
+  position: relative; z-index: 10;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  padding: 30px 16px 0;
+}
+.cp-logo-link { display: block; line-height: 0; }
+.cp-logo { display: block; width: 120px; height: auto; }
+.cp-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px; }
+.cp-nav a { color: var(--gold); font-size: 11.5px; letter-spacing: 0.22em; white-space: nowrap; text-decoration: none; border-bottom: 1px solid transparent; padding: 6px 0; }
+.cp-nav a:hover { color: var(--white); border-color: var(--gold-soft); }
+
+.cp-wrap {
+  position: relative; z-index: 10;
+  max-width: 680px; margin: 0 auto;
+  padding: 26px 16px 80px;
+  font-family: var(--serif);
+  line-break: strict; overflow-wrap: anywhere;
+}
+.cp-wrap-wide { max-width: 960px; }
+
+.cp-crumb { color: var(--muted); font-size: 12px; letter-spacing: 0.04em; line-height: 1.8; margin-bottom: 22px; }
+.cp-crumb a { color: var(--dim); text-decoration: none; }
+.cp-crumb a:hover { color: var(--gold); }
+.cp-crumb span { margin: 0 8px; }
+.cp-crumb span[aria-current] { margin: 0; color: var(--gold); }
+
+/* 見出しの段（2026-10-06 揃え直し）：読み物ページの見出しは全部左揃え。大きさは h1 > h2 > h3 > 本文（スマホ本文 15.5px）。
+   行間は詰め、上に広く・下に狭く＝見出しが下の段落に属して見える。中央に置くのはロゴ・ナビ・ボタン・短詩など読み物でない物だけ */
+.cp-h1 { color: var(--gold); font-weight: normal; text-align: left; line-height: 1.45; letter-spacing: 0.1em; margin: 0 0 22px; font-size: 23px; text-wrap: balance; word-break: keep-all; overflow-wrap: anywhere; }
+.cp-h1-name { font-size: 26px; }
+.cp-h1-en { display: block; font-size: 12px; letter-spacing: 0.3em; color: var(--dim); margin-top: 4px; }
+.cp-h1-tail { font-size: 15px; letter-spacing: 0.2em; color: var(--dim); margin-left: 6px; }
+.cp-h1-hub { font-size: 23px; }
+
+.cp-lead { display: flex; gap: 26px; align-items: center; margin: 0 0 34px; padding: 22px; border: 1px solid var(--gold-line); border-radius: 5px;
+  background: linear-gradient(180deg, rgba(13, 17, 33, 0.94), rgba(6, 8, 16, 0.97)); box-shadow: 0 10px 26px rgba(0, 0, 0, 0.34); }
+.cp-img { width: 200px; height: auto; flex: 0 0 200px; border: 1px solid rgba(212, 181, 103, 0.35); border-radius: 4px; background: #000; }
+.cp-lead-txt { flex: 1; min-width: 0; text-align: center; }
+.cp-en { color: var(--gold); font-size: 12px; letter-spacing: 0.3em; margin: 0 0 12px; }
+.cp-kime { color: var(--white); font-size: 19px; line-height: 1.8; margin: 0 0 12px; text-wrap: balance; text-wrap: pretty; word-break: keep-all; overflow-wrap: anywhere; }
+.cp-one { color: var(--dim); font-size: 14px; line-height: 1.9; margin: 0 0 18px; text-wrap: balance; text-wrap: pretty; word-break: keep-all; overflow-wrap: anywhere; }
+
+.cp-btn { display: inline-block; padding: 11px 24px; border: 1px solid var(--gold); color: var(--gold); font-size: 13px; letter-spacing: 0.18em; text-decoration: none; background: rgba(5, 7, 13, 0.68); transition: background 0.25s ease, color 0.25s ease; }
+.cp-btn:hover { background: rgba(212, 181, 103, 0.12); color: var(--white); }
+.cp-btn-ghost { border-color: var(--gold-line); color: var(--dim); }
+.cp-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 34px 0 10px; }
+
+.cp-h2 { color: var(--gold); font-size: 18px; font-weight: normal; text-align: left; line-height: 1.5; letter-spacing: 0.15em; text-wrap: balance; word-break: keep-all; overflow-wrap: anywhere; margin: 46px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184, 154, 74, 0.4); }
+.cp-h2 a { color: inherit; text-decoration: none; }
+.cp-h2-count { margin-left: 12px; font-size: 12px; color: var(--muted); letter-spacing: 0.1em; }
+.cp-h3 { color: var(--white); font-size: 16px; font-weight: normal; text-align: left; line-height: 1.55; letter-spacing: 0.08em; text-wrap: balance; word-break: keep-all; overflow-wrap: anywhere; margin: 30px 0 6px; }
+.cp-h2 + .cp-h3 { margin-top: 18px; }
+.cp-p { color: var(--dim); font-size: 15px; line-height: 2.05; margin: 0 0 14px; text-wrap: pretty; }
+.cp-p-dim { color: var(--muted); font-size: 13.5px; }
+
+.cp-yn { margin: 4px 0 10px; }
+.cp-yn-badge { display: inline-block; padding: 6px 16px; border: 1px solid var(--gold-line); border-radius: 2px; color: var(--gold); font-size: 14px; letter-spacing: 0.2em; }
+.cp-yn-no, .cp-yn-lean_no { color: var(--dim); }
+
+.cp-poem { margin: 38px auto 6px; padding: 24px 18px; max-width: 460px; color: var(--white); text-align: center; font-size: 15px; line-height: 2.2; letter-spacing: 0.05em;
+  border-top: 1px solid var(--gold-line); border-bottom: 1px solid var(--gold-line); }
+/* 短詩は1行＝原稿の1行（改行位置は原稿どおり）。幅に入らない行だけ、その行の中を文節（<wbr>）で割り、最後に1〜2字だけ残さない。
+   原稿の行と行の間はあけ、行の中で折れた続きは詰める＝どこが原稿の改行かが見て分かる（行どうしの間隔は前と同じ 33px）。
+   text-wrap は pretty（Chrome・Safari 26〜）／pretty を知らない Safari 17.5〜18 は前の行の balance が効く */
+.cp-poem-l { display: block; line-height: 1.75; text-wrap: balance; text-wrap: pretty; word-break: keep-all; overflow-wrap: anywhere; }
+.cp-poem-l + .cp-poem-l { margin-top: 0.45em; }
+
+.cp-deep[hidden] { display: none; }
+
+.cp-grid { display: grid; gap: 14px; }
+.cp-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 420px; }
+.cp-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cp-grid-hub { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
+.cp-mini { display: block; text-decoration: none; text-align: center; padding: 10px 6px 12px; border: 1px solid rgba(212, 181, 103, 0.22); border-radius: 4px; background: rgba(8, 11, 22, 0.7); transition: border-color 0.25s ease; }
+.cp-mini:hover { border-color: var(--gold); }
+.cp-mini img { display: block; width: 100%; height: auto; margin: 0 auto 8px; border-radius: 3px; }
+.cp-mini-ja { display: block; color: var(--white); font-size: 13px; letter-spacing: 0.08em; text-wrap: balance; word-break: keep-all; overflow-wrap: anywhere; }
+.cp-mini-en { display: block; color: var(--muted); font-size: 10px; letter-spacing: 0.15em; margin-top: 2px; }
+.cp-mini-kime { display: block; color: var(--dim); font-size: 11.5px; line-height: 1.7; margin-top: 6px; }
+
+.cp-suit { margin-top: 10px; }
+.cp-suitnav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; margin: 6px 0 26px; }
+.cp-suitnav a { color: var(--gold); font-size: 12.5px; letter-spacing: 0.18em; white-space: nowrap; text-decoration: none; border-bottom: 1px solid var(--gold-line); padding: 4px 2px; }
+
+.cp-foot { position: relative; z-index: 10; max-width: 680px; margin: 0 auto; padding: 0 16px 60px; color: var(--muted); font-size: 12px; line-height: 1.9; text-align: center; font-family: var(--serif); }
+.cp-foot a { color: var(--dim); text-decoration: none; }
+.cp-foot-nav a { white-space: nowrap; } /* 「このタロットについ／て」と言葉の途中で折れないよう、案内は1つずつ塊で折る */
+.cp-foot a:hover { color: var(--gold); }
+.cp-copy { letter-spacing: 0.2em; margin-top: 8px; }
+
+@media (max-width: 600px) {
+  .cp-lead { flex-direction: column; gap: 16px; padding: 18px 14px; }
+  .cp-img { width: 170px; flex-basis: auto; }
+  .cp-kime { font-size: 17px; }
+  .cp-p { font-size: 15.5px; line-height: 2.0; } /* 2026-10-06 スマホ点検：14.5px は本文として小さかった（PC 15px より小さい逆転も解消） */
+  .cp-p-dim { font-size: 14px; }
+  .cmp-row dd { font-size: 15px; }
+  /* 押せる高さ 44px 前後（見出しナビ・スート・パンくず） */
+  /* 3つを1段に（2026-10-06）：字の大きさは幅に合わせて 12.5px まで・字間を詰める。360px 未満の端末だけ2段に回る */
+  .cp-nav { gap: 0 clamp(12px, 4vw, 22px); }
+  .cp-nav a { font-size: min(12.5px, 3.2vw); letter-spacing: 0.06em; padding: 13px 0; }
+  .cp-suitnav { gap: 2px 18px; }
+  .cp-suitnav a { padding: 12px 2px 8px; }
+  .cp-crumb a { display: inline-block; padding: 10px 0; }
+  .cp-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .cp-grid-hub { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .cp-mini { padding: 8px 2px 10px; }
+  .cp-mini-ja { font-size: 12.5px; letter-spacing: 0.03em; } /* 「ソードのクイーン」の8字が 375px 幅の3列に1行で入る大きさ（入らない狭い端末は文節で2行） */
+  .cp-mini-kime { display: none; }
+  .cp-cta .cp-btn { flex: 1 1 100%; text-align: center; }
+}
+
+/* YES/NO 一覧（/cards/yes-no.html・2026-10-05） */
+.cp-yn-list { list-style: none; margin: 0 0 8px; padding: 0; }
+.cp-yn-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(184, 154, 74, 0.18); }
+.cp-yn-name { color: var(--white); text-decoration: none; font-size: 14.5px; }
+.cp-yn-name:hover { color: var(--gold); }
+.cp-nw { white-space: nowrap; }
+.cp-nw-ja { word-break: keep-all; overflow-wrap: anywhere; }
+.cp-yn-row .cp-yn-badge { padding: 3px 10px; font-size: 12px; letter-spacing: 0.12em; white-space: nowrap; }
+.cp-yn-text { grid-column: 1 / -1; color: var(--dim); font-size: 13.5px; line-height: 1.9; text-wrap: pretty; }
+
+/* 相談の2ページへの控えめな導線（カード個別ページ・2026-10-06） */
+.cp-consult { margin: 26px 0 0; padding-top: 16px; border-top: 1px solid rgba(184, 154, 74, 0.18); color: var(--muted); font-size: 12.5px; line-height: 2; text-align: center; }
+.cp-consult a { color: var(--dim); text-decoration: underline; text-underline-offset: 4px; }
+.cp-consult a:hover { color: var(--gold); }
+.cp-inline { color: var(--gold); text-decoration: underline; text-underline-offset: 4px; }
+
+/* 相談先の選び方（/compare/）・相談する前に（/before-consult/）2026-10-06 */
+.cmp-pr-note { margin: 0 0 22px; padding: 12px 14px; border: 1px solid var(--gold-line); border-radius: 3px; color: var(--dim); font-size: 13px; line-height: 1.9; background: rgba(8, 11, 22, 0.7); }
+.cmp-pr-badge { color: var(--gold); margin-right: 6px; letter-spacing: 0.06em; }
+.cmp-co { margin: 18px 0 26px; padding: 18px 16px 20px; border: 1px solid rgba(212, 181, 103, 0.28); border-radius: 4px; background: rgba(8, 11, 22, 0.72); }
+.cmp-name { color: var(--white); font-size: 16px; font-weight: normal; letter-spacing: 0.12em; margin: 0 0 12px; }
+.cmp-dl { margin: 0; }
+.cmp-row { display: grid; grid-template-columns: 8.5em 1fr; gap: 4px 14px; padding: 10px 0; border-bottom: 1px solid rgba(184, 154, 74, 0.16); }
+.cmp-row dt { color: var(--gold); font-size: 13px; letter-spacing: 0.08em; line-height: 1.9; }
+.cmp-row dd { margin: 0; color: var(--dim); font-size: 14px; line-height: 1.9; }
+/* 条件ごとに分けた行（デスティニーの初回特典・2026-10-06） */
+.cmp-ul { margin: 0; padding: 0 0 0 1.1em; list-style: disc; }
+.cmp-ul li { margin: 0 0 6px; }
+.cmp-ul li::marker { color: var(--gold); }
+.cmp-ul li:last-child { margin-bottom: 0; }
+.cmp-src { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.cmp-src a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.cmp-go { margin-top: 14px; text-align: center; }
+.cmp-go:empty { display: none; }
+.cmp-pr { margin-left: 8px; color: var(--dim); font-size: 12px; letter-spacing: 0.06em; }
+.cmp-go .cp-btn { letter-spacing: 0.08em; text-wrap: balance; word-break: auto-phrase; }
+.cmp-h2-date { display: block; margin-top: 4px; color: var(--muted); font-size: 12.5px; letter-spacing: 0.06em; }
+.bc-q { display: flex; align-items: baseline; gap: 10px; }
+.bc-n { color: var(--gold); font-size: 13px; min-width: 1.4em; text-align: center; border: 1px solid var(--gold-line); border-radius: 50%; line-height: 1.5; }
+@media (max-width: 600px) {
+  .cmp-row { grid-template-columns: 1fr; gap: 2px; }
+  .cmp-go .cp-btn { display: block; text-align: center; }
+  .cmp-pr { display: inline-block; margin: 6px 0 0; }
+}
